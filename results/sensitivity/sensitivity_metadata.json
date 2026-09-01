@@ -1,0 +1,14 @@
+{
+  "protocol_version": "1.0.0",
+  "status": "complete",
+  "selected_configuration_source": "results/retailrocket/selected_configurations.csv",
+  "pca_use_for_rules": false,
+  "pca_variance_threshold": 0.9,
+  "session_windows_minutes": [
+    15,
+    30,
+    60
+  ],
+  "permutation_joint_structure_preserved": false,
+  "sigma_zero_required_ari": 1.0
+}

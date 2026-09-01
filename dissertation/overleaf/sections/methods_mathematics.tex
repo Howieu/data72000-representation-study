@@ -1,0 +1,79 @@
+\section{Analytical methods and mathematical scope}
+
+The comparison uses one recorded customer cohort, feature contract, set of candidate grids, deployment constraints and evaluation measures. K Means provides a centre-based reference partition that can be approximated by ExKMC rules. CLASSIX provides a separate clustering result with native aggregation provenance. ExKMC is not a clustering algorithm, and no composite score ranks it against CLASSIX. The same change in represented information is traced through each partition and its corresponding explanation.
+
+\subsection{Clustering candidates and selection}
+
+K Means uses k-means++ seeding, twenty initialisations and the fixed seed 20260801 \citep{macqueen1967kmeans,arthur2007kmeanspp}. The number of clusters ranges from 2 to 12. CLASSIX uses Euclidean distance and sorting along the first principal direction. Radius ranges from 0.25 to 1.75 in increments of 0.05. Minimum cluster size takes values 1, 5 and 10, while group merging uses either distance or density. The merge scale is 1.5, tiny groups can be merged, and post allocation is disabled. Each representation has 11 K Means candidates and 186 CLASSIX candidates. A recorded boundary diagnostic triggered a symmetric radius extension from 1.80 to 2.25 for both representations. The extension tests grid sensitivity and does not replace the primary selection.
+
+Each method and representation reports an unconstrained silhouette optimum and a deployment-acceptable result. A candidate is internally valid only when at least two nonnoise clusters remain and silhouette, Davies Bouldin and Calinski Harabasz indices are finite \citep{rousseeuw1987silhouettes,davies1979separation,calinski1974dendrite}. Deployment acceptability further requires 2 to 12 nonnoise clusters, no more than 20 per cent noise and no single nonnoise cluster larger than 95 per cent of nonnoise observations. Selection maximises silhouette, then prefers lower Davies Bouldin, higher Calinski Harabasz, a smaller largest cluster share, less noise, fewer clusters and finally the lexical parameter record. Runtime is measured but never selects a model. Keeping the unconstrained result reveals when an attractive internal score is produced by a partition that is unsuitable under the stated operational constraints.
+
+Internal indices exclude observations labelled as noise, so CLASSIX index comparisons refer to each partition's nonnoise subset. Cross-representation partition comparisons retain every purchaser because a noise assignment is itself a difference in assignment. Fixed K comparisons use the same value from 2 to 12. Fixed CLASSIX comparisons use the same radius, minimum size and merge rule. Independently selected deployment partitions are compared by adjusted Rand index, arithmetic-mean normalised mutual information and variation of information \citep{hubert1985partitions,meila2007vi}. A Hungarian match aligns cluster labels for transition tables \citep{kuhn1955hungarian}. The resulting migration share describes changed assignments and does not imply that numeric labels identify persistent customer types.
+
+\subsection{Resampling and explanation evaluation}
+
+Fixed-parameter overlap-resampling stability uses ten pairs of independent 80 per cent samples without replacement. The same seed pairs are used for both representations and methods. Each sample refits its transformations and clustering with the full-data deployment parameters. Adjusted Rand index is calculated only on purchaser identifiers present in both members of a pair. The statistic measures sensitivity to sampled customers and, for K Means, initialisation, conditional on the selected configuration. It does not measure stability of model selection, calendar time or an external cohort.
+
+The CLASSIX explanation retains public aggregation group assignments, starting point indices, final labels and cluster sizes. Merge membership is reconstructed from public group and final assignments because version 1.5.1 does not expose a documented complete edge list. Every exported provenance label is checked against the selected main result for the same visitor. The trace is an explanation of the fitted CLASSIX partition and does not claim that a group boundary is a human validated customer rule.
+
+ExKMC approximates K Means labels under five deterministic 80 per cent training and 20 per cent test splits. The primary full cohort selection gives four K Means clusters in both representations, so K is fixed at four before splitting. Log transformations, standardisation, the K Means reference and the ExKMC tree are fitted using training rows only. The test target is the label returned by the fitted K Means predictor. This estimates explanation fidelity conditional on the primary K choice rather than nested selection of K. The leaf budget ranges from K to four times K. The main comparison fixes the budget at K, while the wider range measures the fidelity and complexity tradeoff. A supplementary analysis selects K from 2 to 12 using each training split alone. Fidelity is the proportion of exact label agreements. Complexity is reported through effective leaves, depth, path conditions and features. Rule thresholds are exported in both standardised and original units.
+
+Business addressability is evaluated for selected CLASSIX and K Means clusters through a documented audit rather than subjective cluster names. A nonnoise cluster must contain at least 50 customers and one per cent of nonnoise customers, retain at least 80 per cent category coverage, and differ from the global median by at least half an interquartile range on two to four named features. Passing this audit shows that a cluster can be expressed as a limited set of query conditions with adequate coverage. It does not demonstrate intervention effectiveness, revenue change or human comprehension.
+
+\subsection{Projection filtering and complexity}
+
+Let processed observations be $x_i\in\mathbb{R}^d$, let $u$ be a unit sorting direction and let $s_i=u^{\mathsf T}x_i$. CLASSIX orders the scores and begins a group at a starting point $c$. Its aggregation radius in processed coordinates is $r$.
+
+\begin{proposition}
+If a later point satisfies $s_i-s(c)>r$, then it cannot satisfy $\lVert x_i-c\rVert_2\leq r$.
+\end{proposition}
+
+\begin{proof}
+Cauchy Schwarz gives
+\[
+\lvert s_i-s(c)\rvert
+=\lvert u^{\mathsf T}(x_i-c)\rvert
+\leq \lVert u\rVert_2\lVert x_i-c\rVert_2
+=\lVert x_i-c\rVert_2.
+\]
+The strict score difference implies a distance greater than $r$. The implementation includes equality in both the score window and exact squared distance comparison, so the filter introduces no mathematical false negative apart from floating point effects.
+\end{proof}
+
+The filter gives exact pruning for a fixed order but does not make greedy group assignment independent of that order. If $n$ observations produce $q$ aggregation groups, aggregation retains at most $n(n-1)/2$ exact point comparisons. Distance merging retains at most $q(q-1)/2$ starting point comparisons. The worst case distance arithmetic is
+\[
+O\bigl((n^2+q^2)d\bigr)
+\]
+in addition to principal direction estimation and scalar sorting. The package counter records retained aggregation comparisons on the observed data. It is an empirical quantity and not a proof of linear runtime.
+
+Conditional determinism requires more than a fixed random seed. A positive leading eigengap fixes the one dimensional principal subspace, while the implementation's sign convention fixes its orientation when that convention is separated from zero. The sorted order is fixed when relevant scores are distinct. Exact ties require an explicit stable secondary order or an order invariance check. Radius, merging, minimum size and nearest eligible group decisions must also avoid unresolved equalities. These conditions distinguish deterministic execution on the observed input from a global statement about all nearby inputs.
+
+\subsection{A local stability certificate}
+
+Let the processed covariance matrix be $S$ with leading eigenvalues $\lambda_1$ and $\lambda_2$. Define the eigengap $\gamma=\lambda_1-\lambda_2>0$. Let a perturbation change the covariance by $\Delta S$ and align the perturbed direction $\widehat u$ with $u$. When $2\lVert\Delta S\rVert_2<\gamma$, the Davis Kahan theorem gives the conservative bound \citep{davis1970rotation}
+\[
+\sin\angle(\widehat u,u)
+\leq \frac{2\lVert\Delta S\rVert_2}{\gamma}.
+\]
+After sign alignment, $\lVert\widehat u-u\rVert_2\leq\sqrt{2}\sin\angle(\widehat u,u)$. If every processed point changes by at most $\varepsilon_x$ and has norm at most $B$, a conservative score change bound is
+\[
+b_s=\varepsilon_x+\sqrt{2}B\frac{2\lVert\Delta S\rVert_2}{\gamma}.
+\]
+Let $g_s$ be the minimum adjacent score gap and $g_o$ the orientation rule's absolute score. Let $g_w$ be the minimum margin of every relevant projected score difference from the window boundary $r$. Let $g_r$ be the minimum margin of tested aggregation distances from $r$. For the distance merging branch, let $g_m$ be the corresponding margin between every tested starting-point distance and the active merge threshold. Let $b_r$ and $b_m$ bound the changes of those distance tests.
+
+\begin{proposition}
+The fitted partition under distance merging is unchanged by the perturbation if $g_s>2b_s$, $g_o>b_s$, $g_w>2b_s$, $g_r>b_r$ and $g_m>b_m$, provided that the representatives, eligible groups, minimum size decisions, tiny group rule, post allocation rule and all relevant tie decisions remain fixed.
+\end{proposition}
+
+\begin{proof}
+The first inequality preserves every relevant pairwise score order because each endpoint can move by at most $b_s$. The second preserves the package orientation sign. The third fixes window membership because each score difference moves by at most $2b_s$. The fourth preserves every accepted or rejected radius comparison, while the fifth preserves every merge comparison. With the branch, representatives and eligible set fixed, these unchanged finite decisions reproduce the same groups, merge components and final labels.
+\end{proof}
+
+The certificate is local and sufficient rather than necessary. It does not cover density merging, whose intersection and density decisions require separate margins. Davis Kahan controls only the principal direction. It does not preserve greedy order, aggregation, merging or noise decisions unless the additional finite margins hold. Empirical Gaussian perturbation and customer resampling are reported separately from this statement.
+
+\subsection{Benchmark and robustness designs}
+
+Nine labelled datasets provide an algorithm-level benchmark for CLASSIX, K Means, DBSCAN and Ward \citep{ester1996dbscan,ward1963hierarchical}. Candidate selection uses only internal indices and deployment guards. Reference labels are reserved for ARI and NMI evaluation. K Means results average five fixed seeds before parameter selection. Ward, DBSCAN and CLASSIX store one structural row per candidate, while repeated fits audit label identity and runtime on the recorded environment. This empirical identity check is not a global determinism theorem.
+
+The rich representation undergoes twelve leave-one-feature-out fits. PCA retains at least 90 per cent of standardised variance and is compared with the named space on structure and stability, never on rule quality \citep{pearson1901pca,hotelling1933pca}. CLASSIX perturbation uses standard deviations 0, 0.000001, 0.0001, 0.001 and 0.01 with ten seeds at every nonzero level. Session counts are rebuilt with gaps of 15, 30 and 60 minutes. A negative control appends independently permuted rich-only dimensions to unchanged compact features. These diagnostics retain the primary selected configurations unless a section explicitly reports complete feature reselection.
+
+Artificial intelligence tools assisted with code drafting, data processing, numerical checks and source discovery. The author reran the analyses from saved code, verified retained sources and checked reported values against recorded outputs. Reproducibility details are supplied with the accompanying materials.

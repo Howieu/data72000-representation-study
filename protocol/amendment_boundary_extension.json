@@ -1,0 +1,14 @@
+{
+  "amendment_id": "CLASSIX_RADIUS_UPPER_EXTENSION_1",
+  "status": "conditional_before_supplementary_run",
+  "trigger": "At least one representation has its best valid internal-score CLASSIX candidate at the upper or lower boundary of the frozen main radius grid",
+  "main_grid_unchanged": true,
+  "applies_to_representations": ["compact", "rich"],
+  "radius_start": 1.80,
+  "radius_stop": 2.25,
+  "radius_step": 0.05,
+  "minPts": [1, 5, 10],
+  "group_merging": ["distance", "density"],
+  "selection_use": "supplementary sensitivity only",
+  "rationale": "The extension is applied symmetrically after a boundary trigger and cannot replace or tune the recorded main-grid result"
+}

@@ -1,0 +1,174 @@
+{
+  "protocol": "frozen benchmark protocol v1",
+  "started_at_utc": "2026-08-29T17:00:03.888788+00:00",
+  "elapsed_seconds": 40.22166204202222,
+  "source_manifest": {
+    "path": "data/raw/benchmarks/manifest.json",
+    "source_repository": "https://github.com/nla-group/classix",
+    "source_revision": "6749f00e7e57a26b5dd93632e50f17ccc1d5ff8b",
+    "license": "MIT"
+  },
+  "datasets": [
+    {
+      "name": "aggregation",
+      "kind": "shape",
+      "n_samples": 788,
+      "n_features": 2,
+      "n_classes": 7,
+      "file": "aggregation.txt",
+      "sha256": "216ae781417468a749f9d265a17004ac300055c7cea7b0d4d4731dde895ab187",
+      "source_url": "https://raw.githubusercontent.com/nla-group/CLASSIX/6749f00e7e57a26b5dd93632e50f17ccc1d5ff8b/exps/data/Shape%20sets/Aggregation.txt"
+    },
+    {
+      "name": "compound",
+      "kind": "shape",
+      "n_samples": 399,
+      "n_features": 2,
+      "n_classes": 6,
+      "file": "compound.txt",
+      "sha256": "1afe7c73f4a742a816f550fe61af12d7f5b9b3d63991a3ec185247a96bf824bd",
+      "source_url": "https://raw.githubusercontent.com/nla-group/CLASSIX/6749f00e7e57a26b5dd93632e50f17ccc1d5ff8b/exps/data/Shape%20sets/Compound.txt"
+    },
+    {
+      "name": "jain",
+      "kind": "shape",
+      "n_samples": 373,
+      "n_features": 2,
+      "n_classes": 2,
+      "file": "jain.txt",
+      "sha256": "8df07103b9f0b72b523eedaac75ca445f2e9c1712c023ae13f0796c80e82660f",
+      "source_url": "https://raw.githubusercontent.com/nla-group/CLASSIX/6749f00e7e57a26b5dd93632e50f17ccc1d5ff8b/exps/data/Shape%20sets/Jain.txt"
+    },
+    {
+      "name": "pathbased",
+      "kind": "shape",
+      "n_samples": 300,
+      "n_features": 2,
+      "n_classes": 3,
+      "file": "pathbased.txt",
+      "sha256": "ccd8899ce5e9a0fc881b6067c392c1e480e0d8ae5b500fe18847d7f188efde34",
+      "source_url": "https://raw.githubusercontent.com/nla-group/CLASSIX/6749f00e7e57a26b5dd93632e50f17ccc1d5ff8b/exps/data/Shape%20sets/Pathbased.txt"
+    },
+    {
+      "name": "r15",
+      "kind": "shape",
+      "n_samples": 600,
+      "n_features": 2,
+      "n_classes": 15,
+      "file": "r15.txt",
+      "sha256": "125cfd76551f02cbddb00c191263613a44db3b98ec76d6c1fb0dc5337b1feb65",
+      "source_url": "https://raw.githubusercontent.com/nla-group/CLASSIX/6749f00e7e57a26b5dd93632e50f17ccc1d5ff8b/exps/data/Shape%20sets/R15.txt"
+    },
+    {
+      "name": "spiral",
+      "kind": "shape",
+      "n_samples": 312,
+      "n_features": 2,
+      "n_classes": 3,
+      "file": "spiral.txt",
+      "sha256": "14aac0a6ba90a8ef01ab333e7be232f49b666c75138830e1d91d75c4d0f29902",
+      "source_url": "https://raw.githubusercontent.com/nla-group/CLASSIX/6749f00e7e57a26b5dd93632e50f17ccc1d5ff8b/exps/data/Shape%20sets/Spiral.txt"
+    },
+    {
+      "name": "iris",
+      "kind": "real",
+      "n_samples": 150,
+      "n_features": 4,
+      "n_classes": 3,
+      "file": "iris.csv",
+      "sha256": "3c8964d98c6f5c02decf16f88edd0e9ec3d418da944b9fdf67f4737a6b09397e",
+      "source_url": "https://raw.githubusercontent.com/nla-group/CLASSIX/6749f00e7e57a26b5dd93632e50f17ccc1d5ff8b/exps/data/Real_data/Iris.csv"
+    },
+    {
+      "name": "wine",
+      "kind": "real",
+      "n_samples": 178,
+      "n_features": 13,
+      "n_classes": 3,
+      "file": "wine.csv",
+      "sha256": "21730e61ba56f252b5e9ba9144d095c9ec98d8b70ab20165d0515a8f37a7f515",
+      "source_url": "https://raw.githubusercontent.com/nla-group/CLASSIX/6749f00e7e57a26b5dd93632e50f17ccc1d5ff8b/exps/data/Real_data/Wine.csv"
+    },
+    {
+      "name": "seeds",
+      "kind": "real",
+      "n_samples": 210,
+      "n_features": 7,
+      "n_classes": 3,
+      "file": "seeds.csv",
+      "sha256": "80c6d0797cae333cd8f63260807f26d29e7060e0e5d467e7ae88e18c711bb88b",
+      "source_url": "https://raw.githubusercontent.com/nla-group/CLASSIX/6749f00e7e57a26b5dd93632e50f17ccc1d5ff8b/exps/data/Real_data/Seeds.csv"
+    }
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "runtime_repeats": 2,
+  "parameter_budget": {
+    "k": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "dbscan_eps": [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0,
+      1.1,
+      1.2
+    ],
+    "dbscan_min_samples": [
+      3,
+      5,
+      10
+    ],
+    "classix_radius": [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0,
+      1.1,
+      1.2,
+      1.3,
+      1.4,
+      1.5
+    ],
+    "classix_minPts": [
+      1,
+      5,
+      10
+    ],
+    "classix_group_merging": [
+      "distance",
+      "density"
+    ]
+  },
+  "classix_engine": "classix",
+  "python": "3.10.20 (main, Jun 11 2026, 15:14:28) [Clang 20.1.8 ]",
+  "platform": "macOS-26.6-arm64-arm-64bit"
+}

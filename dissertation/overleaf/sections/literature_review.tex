@@ -1,0 +1,38 @@
+\chapter{Literature Review}
+
+Research on customer segmentation often treats the representation as a neutral input to clustering. That assumption is difficult to defend for event logs. A customer can be described by a few purchase summaries, the full sequence of recorded actions, or a rich set of temporal, conversion and category signals. Each choice changes the distances observed by the algorithm. Clickstream research describes raw action sequences as large, variable and noisy, then frames useful segments as subsets recovered through constraints on derived attributes \citep{dextras2019segmentifier}. Work on object centred event logs likewise converts traces into vector profiles before clustering and pattern analysis \citep{faria2023eventlogs}. Customer behaviour studies construct features for segmentation and later decision tasks, but their application specific choices do not establish a universal representation \citep{abdi2019cbmf}. Representation is part of the empirical model rather than a preliminary clerical step.
+
+Clustering does not reveal a representation independent truth. Clusterability theory supplies several incompatible formal notions of when data possess recoverable structure \citep{ackerman2009clusterability}. Empirical comparisons also show that clusterability measures depend on distributional conditions, dimension and the type of structure sought \citep{adolfsson2019clusterability}. A high internal score supports a partition within a defined feature space, not an intrinsic segmentation outside that space. Dimensional reduction retains this dependence. It replaces named variables with a new geometry and can obscure the link between a cluster and the original attributes \citep{bertsimas2021icot}. A paired comparison on the same customers is more informative than results drawn from unrelated populations.
+
+Explainable clustering contains three distinct design positions. Intrinsic methods expose the computations that create a partition. CLASSIX sorts observations along a principal direction, aggregates nearby points and merges the resulting groups \citep{chen2024classix}. Its public group assignments, starting points and final labels support a trace from an observation to a cluster. Explainability first methods instead make a simple description part of the clustering objective. ICOT constructs tree partitions through optimisation, while XClusters balances distortion against the size and accuracy of a tree during cluster formation \citep{bertsimas2021icot,hwang2023xclusters}. Post hoc methods begin with a reference partition and approximate it with rules or a tree. These positions explain different objects. Provenance from an intrinsic algorithm answers how its own grouping arose. A post hoc tree answers how closely axis aligned rules can reproduce another partition. Neither answer can be converted into the other without changing the target of explanation.
+
+{\setlength{\tabcolsep}{4pt}
+\begin{longtable}{p{0.12\textwidth}p{0.14\textwidth}p{0.14\textwidth}p{0.15\textwidth}p{0.17\textwidth}p{0.14\textwidth}}
+\caption{Comparison of explanation designs in the reviewed literature}\label{tab:literature_designs}\\
+\toprule
+Method & Target & Timing & Form & Complexity control & Status \\
+\midrule
+\endfirsthead
+\toprule
+Method & Target & Timing & Form & Complexity control & Status \\
+\midrule
+\endhead
+CLASSIX & Own partition & Intrinsic & Groups and starting points & Radius and minimum size & Journal \\
+IMM & K Means objective & Tree construction & Threshold tree & One leaf per cluster & Conference \\
+ExKMC & K Means labels & Post hoc & Expanded tree & Leaf budget & Preprint \\
+CREAM & Fitted partition & Post hoc & Cubes and tree rules & Tuning settings & Conference \\
+ICOT & Own partition & Joint & Optimised tree & Validation objective and tree & Journal \\
+XClusters & Joint objective & Joint & Decision tree & Distortion and node tradeoff & Conference \\
+\bottomrule
+\end{longtable}
+}
+
+Decision trees make the tradeoff between concise expression and partition quality explicit. IMM uses threshold cuts to construct a small tree and analyses the additional K Means or K Medians cost caused by that restriction \citep{moshkovitz2020imm}. Theoretical work shows that such simplicity can impose unavoidable objective loss and that the magnitude depends on the clustering problem, cluster count and dimension \citep{laber2021price}. Other work asks how a fixed clustering can be made explainable after removing a limited number of outlying observations, which further demonstrates that an apparently simple tree may obtain its clarity by changing the population being explained \citep{bandyapadhyay2022explanation}. CREAM constructs hypercubic approximations through decision tree induction and tunes the resulting approximation, extending the same concern beyond one reference algorithm \citep{sabbatini2023cream}. These methods make complexity measurable through leaves, depth, conditions and features, but those counts do not by themselves establish that a person will understand or use the explanation.
+
+Theory and software maturity also vary across these approaches. IMM and price analyses provide approximation bounds under defined objective functions, whereas CLASSIX supplies a maintained implementation and public explanation attributes for its own partition. CREAM, ICOT and XClusters broaden the expression and optimisation choices, but their guarantees and computational demands concern different targets. Queryable rules, bounded objective loss and native provenance are complementary properties rather than grades on one explanation scale.
+
+ExKMC expands a tree beyond one leaf for each K Means cluster, allowing the leaf budget to test whether additional rules improve agreement with a fixed reference. Its verified source is an arXiv preprint rather than a peer reviewed publication. It documents the implemented method but does not provide independent evidence of general effectiveness \citep{frost2020exkmc}. Fidelity here means exact predictive agreement between the tree and held out K Means assignments. It is neither an internal clustering metric nor evidence that the K Means partition is substantively correct. More general XAI research finds that fidelity measures can disagree even when a transparent model supplies a known reference, so the target and calculation must be stated directly \citep{mironicolau2025fidelity}.
+
+Operational usefulness introduces another boundary. A tree or a set of threshold conditions may be machine queryable, while an intrinsic trace may identify prototypes and merge relations. Queryability can be observed through the number of conditions, the use of named features, customer coverage and agreement with a reference partition. It does not establish improved revenue, better interventions or human comprehension. Segmentifier illustrates why recorded constraints and provenance can support the refinement and export of behavioural segments, but its design study does not validate the commercial effect of a clustering model \citep{dextras2019segmentifier}. Similarly, theoretical guarantees on objective cost do not measure whether a segment is large enough, distinct enough or sufficiently covered by reliable attributes to be acted upon.
+
+In line with these observations, the present study compares compact transaction and rich behavioural representations for the same RetailRocket purchasers under matched clustering and evaluation conditions, and relates differences in cluster structure to CLASSIX provenance, ExKMC fidelity and auditable addressability.

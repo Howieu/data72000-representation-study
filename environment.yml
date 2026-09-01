@@ -1,0 +1,14 @@
+name: retailrocket-representation-thesis
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10.20
+  - numpy=1.26.4
+  - pandas=2.3.3
+  - scipy=1.15.3
+  - scikit-learn=1.7.2
+  - matplotlib=3.10.9
+  - pip
+  - pip:
+      - classixclustering==1.5.1
+      - ExKMC==0.0.3

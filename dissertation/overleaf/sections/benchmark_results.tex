@@ -1,0 +1,28 @@
+\section{Algorithm benchmark}
+
+Nine labelled datasets provide an algorithm check before the customer analysis. Six shape datasets and three multivariate datasets were evaluated with CLASSIX, K Means, DBSCAN and Ward. Selection used internal indices and deployment guards. Reference labels entered only the subsequent ARI and NMI calculation.
+
+No method dominates the benchmark. K Means has the highest mean ARI across the nine selected results at 0.597, followed by Ward at 0.575, DBSCAN at 0.509 and CLASSIX at 0.508. CLASSIX and Ward share a mean rank of 2.44, while K Means has 2.39 and DBSCAN has 2.72. These averages conceal marked dependence on shape. CLASSIX recovers the Jain reference exactly but reaches only 0.264 ARI on R15. DBSCAN recovers Spiral exactly and performs best on Aggregation and Compound, yet its selected Wine candidate has no valid internal score. K Means is strongest on Seeds and Wine, while Ward is strongest on R15.
+
+\begin{table}[htbp]
+\centering
+\caption{Highest external ARI after label free selection on each benchmark dataset}
+\label{tab:benchmark_winners}
+\begin{tabular}{lcc}
+\toprule
+Dataset & Method & ARI \\
+\midrule
+Aggregation & DBSCAN & 0.910 \\
+Compound & DBSCAN & 0.826 \\
+Iris & CLASSIX and K Means & 0.568 \\
+Jain & CLASSIX & 1.000 \\
+Pathbased & CLASSIX & 0.497 \\
+R15 & Ward & 0.804 \\
+Seeds & K Means & 0.481 \\
+Spiral & DBSCAN & 1.000 \\
+Wine & K Means & 0.897 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Observed runtime depends on implementation and dataset size. Median selected runtime is 0.011 seconds for CLASSIX, 0.064 seconds for K Means, 0.003 seconds for DBSCAN and 0.004 seconds for Ward on the recorded machine. These values do not establish a universal speed ordering. The benchmark instead verifies that the implementations, label-free selector and external evaluation recover varied successes and failures before the same metric code is applied to RetailRocket. The customer conclusion rests on paired evidence rather than algorithm superiority.

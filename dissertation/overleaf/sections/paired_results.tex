@@ -1,0 +1,38 @@
+\section{Representation and customer cluster structure}
+
+Changing the represented information alters the selected customer structure for both clustering methods. Table~\ref{tab:customer_results} reports the independently selected deployment-acceptable configurations. K Means selects four clusters in each representation, but the agreement between the two four-cluster partitions is only 0.014 ARI. CLASSIX selects two compact clusters and three rich nonnoise clusters with 218 additional noise assignments. Their cross-representation agreement is 0.068 ARI. These values are close to the chance-adjusted baseline even though the customer identifiers and algorithm families are unchanged.
+
+\begin{table}[htbp]
+\centering
+\caption{Deployment acceptable clustering results on the shared purchaser cohort}
+\label{tab:customer_results}
+\begin{tabular}{llrrrrr}
+\toprule
+Representation & Method & Clusters & Noise & Largest share & Silhouette & Stability \\
+\midrule
+Compact & CLASSIX & 2 & 0 & 0.909 & 0.595 & 0.985 \\
+Rich & CLASSIX & 3 & 218 & 0.898 & 0.291 & 0.965 \\
+Compact & K Means & 4 & 0 & 0.664 & 0.560 & 0.988 \\
+Rich & K Means & 4 & 0 & 0.579 & 0.351 & 0.995 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The internal indices do not move in a single direction. Compact CLASSIX has silhouette 0.595, Davies Bouldin 1.057 and Calinski Harabasz 4285.5. The rich result has silhouette 0.291, Davies Bouldin 0.859 and Calinski Harabasz 1516.9. These CLASSIX values are calculated on each partition's nonnoise observations. Davies Bouldin favours the rich result, while silhouette and Calinski Harabasz favour the compact result. Compact K Means has silhouette 0.560 and Calinski Harabasz 10459.1, compared with 0.351 and 3923.4 in the rich space. Davies Bouldin rises from 0.775 to 1.040. Richer behaviour produces a different geometry whose apparent quality depends on the criterion.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.80\textwidth]{figures/customer_structure.png}
+\caption{Internal structure and resampling stability for the selected customer partitions}
+\label{fig:customer_structure}
+\end{figure}
+
+The deployment rule materially changes the result that would be chosen by silhouette alone. Compact CLASSIX reaches silhouette 0.899 by placing 11,698 of 11,719 customers in one cluster. Rich CLASSIX reaches 0.792 with 11,716 customers in one cluster and the remaining three customers split across two tiny clusters. Compact K Means reaches 0.850 with 11,593 customers in one of two clusters. All three partitions fail the maximum share rule. The deployment selections sacrifice these high silhouette values to avoid reporting a nearly undivided customer base as a useful segmentation. Rich K Means is the only case where the unconstrained and deployment selections coincide.
+
+Low agreement is not caused only by choosing different numbers of clusters. At every fixed K from 2 to 12, the K Means ARI between compact and rich representations remains between 0.012 and 0.113. At the common selected value of four it is 0.014, with NMI 0.089 and variation of information 1.691 nats. Under matched labels, 54.61 per cent of customers move to a different K Means cluster. Among 41 CLASSIX settings that are deployment acceptable in both spaces, matched-parameter ARI ranges from $-0.051$ to $0.392$ with a median of $-0.023$. The independently selected CLASSIX partitions have NMI 0.054 and variation of information 0.693 nats, with 18.66 per cent assigned to a different matched cluster or noise state. The lower CLASSIX migration share partly reflects the dominance of one large cluster in both representations and should not be read as stronger substantive agreement.
+
+Cluster sizes make the changes more concrete. Compact K Means contains 7,784, 2,494, 1,344 and 97 customers. Rich K Means contains 6,790, 3,607, 1,156 and 166. Its 166 customer cluster has a median of 338.5 total events, 28 sessions and 12 top categories, whereas the full cohort medians are 6 events, 2 sessions and 1 top category. Another rich cluster of 1,156 customers has no known category at its median and a purchase recency median of 127.4 days. These are descriptive contrasts in observed features, not customer identities or causal segments.
+
+CLASSIX yields a sharper imbalance. The compact deployment result contains 10,656 and 1,063 customers. The rich result contains 10,331, 1,137 and 33 nonnoise customers plus 218 noise assignments. The 33-customer cluster is highly active, with medians of 869 total events, 36 sessions and 14 top categories. Its small size fails the documented addressability size rule. The 1,137-customer cluster has zero category coverage and fails the coverage rule. The dominant 10,331-customer cluster has no two sufficiently distinctive median effects. Richer features expose unusual behavioural combinations, but the selected CLASSIX partition does not turn them into a balanced set of directly addressable clusters.
+
+Fixed-parameter overlap-resampling indicates that these structural differences are reproducible under the stated sampling scheme. Mean overlap ARI is 0.985 for compact CLASSIX and 0.965 for rich CLASSIX. The corresponding K Means values are 0.988 and 0.995. The lowest of ten pairwise values is 0.881 for compact CLASSIX and 0.941 for rich CLASSIX. Stable refitting does not imply that a partition is uniquely correct or that selection would recur. It shows that each selected representation and parameter combination tends to reproduce its own assignment pattern when one fifth of the cohort is omitted.

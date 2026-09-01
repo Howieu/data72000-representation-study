@@ -1,0 +1,13 @@
+feature,block,formula,input_events,observation_window,unit,missing_strategy,zero_denominator_strategy,transform,example
+purchase_recency_days,compact_transaction,(snapshot_utc - latest transaction timestamp) / 86400 seconds,transaction,full event snapshot,days,cohort guarantees one transaction,not applicable,log1p,"snapshot 2020-01-03, transaction 2020-01-01 12:00 -> 1.5"
+purchase_occasion_count,compact_transaction,number of distinct non-empty transactionid values,transaction,full event snapshot,occasions,empty transactionid excluded,not applicable,log1p,"transactionid A,A,B -> 2"
+purchase_event_count,compact_transaction,count of transaction event rows,transaction,full event snapshot,events,none,not applicable,log1p,three transaction rows -> 3
+total_events,activity,count of all event rows,all events,full event snapshot,events,none,not applicable,log1p,"view, addtocart, transaction -> 3"
+active_days,activity,number of distinct UTC calendar days containing an event,all events,full event snapshot,days,none,not applicable,log1p,events on two UTC dates -> 2
+cart_per_view,conversion,addtocart event count / view event count,addtocart and view,full event snapshot,ratio,none,0 when view count is 0; audited,none,2 addtocart / 4 view -> 0.5
+transaction_per_view,conversion,transaction event count / view event count,transaction and view,full event snapshot,ratio,none,0 when view count is 0; audited,none,1 transaction / 4 view -> 0.25
+activity_span_days,temporal_engagement,(latest event timestamp - earliest event timestamp) / 86400 seconds,all events,full event snapshot,days,single event gives 0,not applicable,log1p,events 36 hours apart -> 1.5
+mean_interevent_hours,temporal_engagement,mean adjacent event gap after stable visitor-time-row sorting,all events,full event snapshot,hours,single event gives 0,0 when no adjacent pair; audited by schema,log1p,gaps of 1 and 3 hours -> 2
+session_count_30m,temporal_engagement,1 + count of adjacent gaps strictly greater than 30 minutes,all events,full event snapshot,sessions,cohort has at least one event,not applicable,log1p,gaps 10 and 31 minutes -> 2
+distinct_top_categories,category_behaviour,number of distinct top categories among known as-of joins,events with category property,category known at or before event,categories,unknown joins excluded; flag retained,0 when no known category events; audited,log1p,"known top categories 10,10,20 -> 2"
+top_category_share,category_behaviour,largest top-category event count / known top-category event count,events with category property,category known at or before event,share,unknown joins excluded; flag retained,0 when no known category events; audited,none,category counts 3 and 1 -> 0.75

@@ -1,0 +1,14 @@
+{
+  "runtime": "exkmc",
+  "package": "classixclustering==1.5.1",
+  "metric": "euclidean",
+  "sorting": "pca",
+  "group_merging": "distance",
+  "radius": 0.45,
+  "minPts": 1,
+  "seed": 20260828,
+  "sizes": [[64, 2], [128, 2], [256, 2], [64, 8], [128, 8], [256, 8]],
+  "count_definition": "CLASSIX model.nrDistComp_ from Euclidean aggregation; merge_pair_bound is the q*(q-1)/2 center-pair bound",
+  "bound_definition": "n*(n-1)/2 retained-pair worst case plus q*(q-1)/2 center-pair bound, each distance costing O(d)",
+  "timing_note": "elapsed_ms is one fresh wall-clock fit per synthetic array and is descriptive, not a speed claim"
+}

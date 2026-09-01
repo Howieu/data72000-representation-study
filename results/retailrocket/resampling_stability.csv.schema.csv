@@ -1,0 +1,14 @@
+column,position
+representation,0
+method,1
+selection,2
+candidate_id,3
+pair_id,4
+seed_left,5
+seed_right,6
+sample_fraction,7
+n_left,8
+n_right,9
+n_overlap,10
+valid_overlap,11
+ari_overlap,12

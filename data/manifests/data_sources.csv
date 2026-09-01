@@ -1,0 +1,3 @@
+dataset,source_title,source_url,publisher_or_creator,license,license_url,accessed_on,redistribution_condition
+RetailRocket,Retailrocket recommender system dataset,https://www.kaggle.com/datasets/retailrocket/ecommerce-dataset,Retailrocket,CC BY-NC-SA 4.0,https://creativecommons.org/licenses/by-nc-sa/4.0/,2026-08-28,Redistribution is limited to non-commercial use with attribution and share-alike licensing
+Nine labelled benchmark datasets,CLASSIX frozen data collection,https://github.com/nla-group/CLASSIX/tree/6749f00e7e57a26b5dd93632e50f17ccc1d5ff8b/exps/data,nla-group,MIT,https://github.com/nla-group/CLASSIX/blob/6749f00e7e57a26b5dd93632e50f17ccc1d5ff8b/LICENSE,2026-08-28,Retain the upstream copyright and licence notice

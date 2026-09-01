@@ -1,0 +1,16 @@
+file,column_order,column,inferred_dtype,nullable,row_count
+events.csv,0,timestamp,int64,False,2756101
+events.csv,1,visitorid,int64,False,2756101
+events.csv,2,event,object,False,2756101
+events.csv,3,itemid,int64,False,2756101
+events.csv,4,transactionid,float64,True,2756101
+item_properties_part1.csv,0,timestamp,int64,False,10999999
+item_properties_part1.csv,1,itemid,int64,False,10999999
+item_properties_part1.csv,2,property,object,False,10999999
+item_properties_part1.csv,3,value,object,False,10999999
+item_properties_part2.csv,0,timestamp,int64,False,9275903
+item_properties_part2.csv,1,itemid,int64,False,9275903
+item_properties_part2.csv,2,property,object,False,9275903
+item_properties_part2.csv,3,value,object,False,9275903
+category_tree.csv,0,categoryid,int64,False,1669
+category_tree.csv,1,parentid,float64,True,1669

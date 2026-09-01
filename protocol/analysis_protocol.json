@@ -1,0 +1,35 @@
+{
+  "protocol_version": "1.0.0",
+  "status": "frozen_before_main_run",
+  "cohort_definition": "unique visitors with at least one transaction event",
+  "expected_cohort_size": 11719,
+  "snapshot_rule": "maximum event timestamp plus 24 hours",
+  "timezone": "UTC",
+  "primary_seed": 20260801,
+  "kmeans": {
+    "k": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "init": "k-means++",
+    "n_init": 20
+  },
+  "classix": {
+    "radius_start": 0.25,
+    "radius_stop": 1.75,
+    "radius_step": 0.05,
+    "minPts": [1, 5, 10],
+    "group_merging": ["distance", "density"],
+    "mergeScale": 1.5,
+    "post_alloc": false
+  },
+  "deployment_constraints": {
+    "min_clusters": 2,
+    "max_clusters": 12,
+    "max_noise_fraction": 0.2,
+    "max_largest_non_noise_cluster_share": 0.95
+  },
+  "perturbation_standard_deviations": [0.0, 0.000001, 0.0001, 0.001, 0.01],
+  "nonzero_perturbation_repeats": 10,
+  "resampling_fraction": 0.8,
+  "resampling_pairs": 10,
+  "exkmc_split_fraction": 0.8,
+  "exkmc_split_seeds": [20260801, 20260802, 20260803, 20260804, 20260805]
+}

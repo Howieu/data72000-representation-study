@@ -1,0 +1,3 @@
+representation,n_customers,exact_label_match,partition_ari,selected_label_source
+compact,11719,True,1.0,results/retailrocket/selected_labels.csv
+rich,11719,True,1.0,results/retailrocket/selected_labels.csv

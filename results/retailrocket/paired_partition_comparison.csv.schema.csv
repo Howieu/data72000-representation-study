@@ -1,0 +1,13 @@
+column,position
+comparison,0
+method,1
+parameter_key,2
+parameter_value,3
+k,4
+left_representation,5
+right_representation,6
+n_samples,7
+ari,8
+nmi,9
+vi,10
+availability,11

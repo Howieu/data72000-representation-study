@@ -1,0 +1,7 @@
+runtime,package_version,metric,sorting,group_merging,radius,mergeScale,n_samples,n_features,groups,aggregation_distance_count,aggregation_pair_bound,merge_pair_bound,worst_case_distance_arithmetic_units,elapsed_ms
+exkmc,1.5.1,euclidean,pca,distance,0.45,1.5,64,2,30,153,2016,435,4902,10.095416
+exkmc,1.5.1,euclidean,pca,distance,0.45,1.5,128,2,42,419,8128,861,17978,1.664583
+exkmc,1.5.1,euclidean,pca,distance,0.45,1.5,256,2,49,915,32640,1176,67632,1.56625
+exkmc,1.5.1,euclidean,pca,distance,0.45,1.5,64,8,64,986,2016,2016,32256,2.063875
+exkmc,1.5.1,euclidean,pca,distance,0.45,1.5,128,8,124,3978,8128,7626,126032,3.272375
+exkmc,1.5.1,euclidean,pca,distance,0.45,1.5,256,8,247,16330,32640,30381,504168,8.197708

@@ -1,0 +1,16 @@
+column,position
+representation,0
+method,1
+selection,2
+candidate_id,3
+cluster,4
+cluster_is_noise,5
+feature,6
+n_customers,7
+share_of_all_customers,8
+share_of_non_noise_customers,9
+median,10
+q25,11
+q75,12
+global_median,13
+iqr_effect,14

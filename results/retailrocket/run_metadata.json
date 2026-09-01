@@ -1,0 +1,15 @@
+{
+  "started_at_utc": "2026-08-28T13:03:44.524891+00:00",
+  "elapsed_seconds": 541.455355291022,
+  "protocol_path": "protocol/analysis_protocol.json",
+  "derived_tables": [
+    "data/derived/compact_features.csv",
+    "data/derived/rich_features.csv"
+  ],
+  "n_visitors": 11719,
+  "candidate_rows": 394,
+  "boundary_extension_rows": 120,
+  "classix_engine": "classixclustering==1.5.1",
+  "python": "3.10.20 (main, Jun 11 2026, 15:14:28) [Clang 20.1.8 ]",
+  "platform": "macOS-26.6-arm64-arm-64bit"
+}

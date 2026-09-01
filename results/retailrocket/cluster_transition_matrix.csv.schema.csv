@@ -1,0 +1,13 @@
+column,position
+method,0
+comparison,1
+parameter_key,2
+parameter_value,3
+source_representation,4
+target_representation,5
+source_cluster,6
+target_cluster_original,7
+target_cluster_matched,8
+n_customers,9
+share_of_customers,10
+migration_flag,11

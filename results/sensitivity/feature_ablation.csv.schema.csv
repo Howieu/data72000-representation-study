@@ -1,0 +1,17 @@
+column,position
+algorithm,0
+representation,1
+selection,2
+candidate_id,3
+parameters,4
+dropped_feature,5
+n_features,6
+n_clusters,7
+largest_non_noise_cluster_share,8
+silhouette,9
+davies_bouldin,10
+calinski_harabasz,11
+ari,12
+stability_ari,13
+n_noise,14
+noise_fraction,15

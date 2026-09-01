@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0.0",
+  "representations": {
+    "compact": [
+      "purchase_recency_days",
+      "purchase_occasion_count",
+      "purchase_event_count"
+    ],
+    "rich": [
+      "purchase_recency_days",
+      "purchase_occasion_count",
+      "purchase_event_count",
+      "total_events",
+      "active_days",
+      "cart_per_view",
+      "transaction_per_view",
+      "activity_span_days",
+      "mean_interevent_hours",
+      "session_count_30m",
+      "distinct_top_categories",
+      "top_category_share"
+    ]
+  },
+  "split_seeds": [
+    20260801,
+    20260802,
+    20260803,
+    20260804,
+    20260805
+  ],
+  "train_fraction": 0.8,
+  "k_selection_source": "frozen_primary_k_with_split_local_training_fits",
+  "test_rows_used_for_selection": 0,
+  "exkmc_leaf_grid": "k..4k inclusive",
+  "exkmc_reference": "KMeans fit on each training partition",
+  "supplementary_k_selection": "split_local_training_rows_only",
+  "python_hash_seed": 0,
+  "numerical_library_threads": 1,
+  "deterministic_process_environment": {
+    "PYTHONHASHSEED": "0",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "classix_provenance_note": "native public assignments are retained; merge relations are explicitly reconstructed where no documented edge API exists"
+}

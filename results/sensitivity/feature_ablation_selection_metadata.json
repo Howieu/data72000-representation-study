@@ -1,0 +1,16 @@
+{
+  "protocol_version": "1.0.0",
+  "status": "complete",
+  "scenario_count": 22,
+  "candidate_rows": 4334,
+  "selected_rows": 88,
+  "selection_per_scenario": [
+    "unconstrained_silhouette",
+    "deployment_acceptable"
+  ],
+  "candidate_grid_per_scenario": {
+    "kmeans": 11,
+    "classix": 186
+  },
+  "preprocessing": "retained columns preserve frozen rich full-data transforms and standardisation"
+}

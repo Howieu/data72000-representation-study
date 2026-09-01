@@ -1,0 +1,9 @@
+\chapter{Technical Reproduction Map}
+
+The reported experimental results are reproduced from the distributed data with \path{python -m src.reproduce}. The fixed sequence covers the benchmark, customer clustering, explanations, sensitivity analyses, summary tables and figures. The optional \path{--compile-pdf} flag also rebuilds the report. Environment versions and random seeds are recorded in \path{environment.yml} and \path{protocol/analysis_protocol.json}.
+
+Primary clustering selections are stored in \path{results/retailrocket/selected_configurations.csv}. Customer level labels, transitions, profiles and resampling records remain separate so that every reported aggregate can be recalculated. ExKMC training selection, held out fidelity and exported rules are stored in distinct files. CLASSIX provenance includes an exact label audit against the selected result.
+
+The sensitivity directory separates fixed parameter diagnostics from complete candidate reselection. PCA records that reduced components are not permitted for rules. The zero perturbation rows have ARI 1. Session windows are reconstructed from the distributed purchaser timestamp table. Permuted dimensions retain the compact columns exactly while destroying their joint customer alignment.
+
+The distributed feature tables and purchaser event timestamps are sufficient for the reported experiments. The optional \path{--rebuild-features} flag reconstructs these tables when the four original RetailRocket files are available. The repository \path{README.md} records the execution sequence, output map and licence boundary.

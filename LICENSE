@@ -1,0 +1,36 @@
+DATA AND SOFTWARE LICENCE RECORD
+
+RetailRocket data
+
+The distributed customer feature tables and purchaser timestamp table are
+derived from the Retailrocket recommender system dataset published on Kaggle.
+The dataset card identifies the licence as Creative Commons Attribution
+NonCommercial ShareAlike 4.0 International.
+
+Source
+https://www.kaggle.com/datasets/retailrocket/ecommerce-dataset
+
+Licence
+https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+The recorded use is noncommercial academic reproduction. Redistribution and
+adaptation are governed by attribution, noncommercial and share-alike
+conditions.
+
+Benchmark data
+
+The nine labelled benchmark files were obtained from the CLASSIX repository at
+revision 6749f00e7e57a26b5dd93632e50f17ccc1d5ff8b. Redistributed copies retain
+the upstream MIT notice under data/raw/benchmarks/LICENSE.
+
+Source
+https://github.com/nla-group/CLASSIX/tree/6749f00e7e57a26b5dd93632e50f17ccc1d5ff8b/exps/data
+
+Upstream licence
+https://github.com/nla-group/CLASSIX/blob/6749f00e7e57a26b5dd93632e50f17ccc1d5ff8b/LICENSE
+
+Dissertation code
+
+No blanket licence is granted for the dissertation source code. Third-party
+packages retain their respective licences. The environment definition records
+package names and versions without redistributing package source.

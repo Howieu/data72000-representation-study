@@ -1,0 +1,48 @@
+\section{Research design}
+
+The research design compares two descriptions of the same purchasers. The compact representation contains three variables that summarise purchase timing and frequency. The rich representation contains twelve variables. It retains the same three purchase variables and adds nine measures of activity, conversion, temporal engagement and category behaviour. Both representations are constructed from the same event history for the same 11,719 customers. Their comparison therefore examines how the additional behavioural variables alter the geometry presented to the clustering algorithms.
+
+\subsection{Data source}
+
+The empirical comparison uses the RetailRocket recommender system dataset, an event log released under the Creative Commons Attribution NonCommercial ShareAlike licence \citep{retailrocketdataset}. The data used in the analysis contain 2,756,101 event rows, two item property files with 20,275,902 rows in total, and a category tree with 1,669 nodes. Events record an anonymous visitor, time, item and action type. Transaction identifiers are present on purchase events, but price, expenditure and revenue are absent. Event frequency is not interpreted as monetary value, and purchase rows are not described as product quantities.
+
+The study population contains every visitor with at least one transaction event. Applying this rule to the event table yields 11,719 purchasers and 230,678 event rows for those purchasers. Both representations use these same customers in the same order. The observation snapshot is one day after the final recorded event, which gives 19 September 2015 at 02.59.47 UTC. Purchase recency is measured from this snapshot rather than from each customer's final browsing action. Stable ordering by visitor, timestamp and original row position resolves equal timestamps without making an arbitrary event sequence depend on file reading behaviour.
+
+\subsection{Feature engineering}
+
+Three purchase summaries form the compact representation. Purchase recency is the elapsed number of days from the last transaction event to the snapshot. Purchase occasion count is the number of distinct nonempty transaction identifiers. Purchase event count is the number of transaction rows. The latter two measures can differ when several transaction rows share an identifier. They describe purchase activity recorded in the event log and do not substitute for expenditure.
+
+Nine additional variables expand the compact representation into the rich representation. They describe activity volume, conversion, timing and category behaviour. Table~\ref{tab:feature_contract} defines all twelve variables. The three purchase variables are carried into the rich table without recalculation, so each purchaser has the same purchase summary in both representations.
+
+\begin{longtable}{p{0.27\textwidth}p{0.20\textwidth}p{0.43\textwidth}}
+\caption{Recorded feature contract for the two customer representations}\label{tab:feature_contract}\\
+\toprule
+Feature & Block & Operational definition \\
+\midrule
+\endfirsthead
+\toprule
+Feature & Block & Operational definition \\
+\midrule
+\endhead
+Purchase recency days & Compact transaction & Days from the latest transaction event to the snapshot \\
+Purchase occasion count & Compact transaction & Distinct nonempty transaction identifiers \\
+Purchase event count & Compact transaction & Transaction event rows \\
+Total events & Activity & All event rows for the visitor \\
+Active days & Activity & UTC calendar days containing an event \\
+Cart per view & Conversion & Add to cart events divided by view events \\
+Transaction per view & Conversion & Transaction events divided by view events \\
+Activity span days & Temporal engagement & Days between first and last event \\
+Mean interevent hours & Temporal engagement & Mean gap between adjacent events \\
+Session count 30m & Temporal engagement & Sessions separated by more than thirty minutes \\
+Distinct top categories & Category behaviour & Distinct root categories among known joins \\
+Top category share & Category behaviour & Largest root category count divided by known category events \\
+\bottomrule
+\end{longtable}
+
+Category variables require a time-valid join because item properties change during the observation period. Each event receives the latest category property that was available at or before its timestamp. The category tree then maps that category to its root. This procedure covers 2,099,173 event rows, which is 76.16 per cent of all events. Unknown joins are excluded from category denominators rather than treated as a category. A total of 1,168 purchasers have no event with a known category. Their two category features are set to zero, while a separate coverage indicator records the missing information. This indicator is used for data checks and is not included among the twelve clustering variables. The missing category records prevent these variables from being interpreted as complete purchase preferences.
+
+Ratio variables also use explicit denominator rules. Cart per view and transaction per view equal zero when a visitor has no recorded view event. This condition affects 428 purchasers and is retained in the feature audit. A session starts with a visitor's first event or after an inactivity gap greater than thirty minutes. Alternative gaps of fifteen and sixty minutes are reserved for sensitivity analysis. These choices make every derived value reproducible while exposing the assumptions most likely to affect temporal structure.
+
+Nonnegative counts and time variables receive a logarithm after adding one. Ratios and shares remain on their original scale. Each representation is then standardised feature by feature using its own fitted means and standard deviations. Full-data clustering fits these transformations on the complete cohort. Sample splitting and resampling fit them only on the relevant training or subsample rows. PCA is applied only to a separately standardised copy of the rich representation and never supplies features to rule explanations or cluster descriptions.
+
+Before clustering, both feature tables were checked against the source data. File hashes identify the exact raw inputs. Unit tests recalculate features for small manually checked event histories that include equal timestamps, category changes, missing categories and zero denominators. Each table must contain the same 11,719 unique purchaser identifiers in the same order. The three purchase variables are then compared row by row and must be identical across the two tables. These checks ensure that the compact and rich analyses differ through the nine additional behavioural variables rather than through different customers or conflicting purchase summaries.

@@ -1,0 +1,15 @@
+column,position
+representation,0
+method,1
+selection,2
+candidate_id,3
+parameters,4
+n_clusters,5
+n_clusters_excluding_noise,6
+n_noise,7
+noise_fraction,8
+largest_non_noise_cluster_share,9
+silhouette,10
+davies_bouldin,11
+calinski_harabasz,12
+deployment_acceptable,13

@@ -1,0 +1,13 @@
+column,position
+representation,0
+summary_level,1
+radius,2
+minPts,3
+group_merging,4
+n_candidates,5
+valid_internal_count,6
+deployment_acceptable_count,7
+mean_silhouette,8
+max_silhouette,9
+noise_fraction_min,10
+noise_fraction_max,11
