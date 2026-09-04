@@ -1,14 +1,17 @@
 \section{Research design}
+\label{sec:design}
 
 The research design compares two descriptions of the same purchasers. The compact representation contains three variables that summarise purchase timing and frequency. The rich representation contains twelve variables. It retains the same three purchase variables and adds nine measures of activity, conversion, temporal engagement and category behaviour. Both representations are constructed from the same event history for the same 11,719 customers. Their comparison therefore examines how the additional behavioural variables alter the geometry presented to the clustering algorithms.
 
 \subsection{Data source}
+\label{sec:data-source}
 
 The empirical comparison uses the RetailRocket recommender system dataset, an event log released under the Creative Commons Attribution NonCommercial ShareAlike licence \citep{retailrocketdataset}. The data used in the analysis contain 2,756,101 event rows, two item property files with 20,275,902 rows in total, and a category tree with 1,669 nodes. Events record an anonymous visitor, time, item and action type. Transaction identifiers are present on purchase events, but price, expenditure and revenue are absent. Event frequency is not interpreted as monetary value, and purchase rows are not described as product quantities.
 
 The study population contains every visitor with at least one transaction event. Applying this rule to the event table yields 11,719 purchasers and 230,678 event rows for those purchasers. Both representations use these same customers in the same order. The observation snapshot is one day after the final recorded event, which gives 19 September 2015 at 02.59.47 UTC. Purchase recency is measured from this snapshot rather than from each customer's final browsing action. Stable ordering by visitor, timestamp and original row position resolves equal timestamps without making an arbitrary event sequence depend on file reading behaviour.
 
 \subsection{Feature engineering}
+\label{sec:feature-engineering}
 
 Three purchase summaries form the compact representation. Purchase recency is the elapsed number of days from the last transaction event to the snapshot. Purchase occasion count is the number of distinct nonempty transaction identifiers. Purchase event count is the number of transaction rows. The latter two measures can differ when several transaction rows share an identifier. They describe purchase activity recorded in the event log and do not substitute for expenditure.
 

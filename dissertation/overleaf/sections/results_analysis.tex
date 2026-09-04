@@ -1,6 +1,7 @@
 \chapter{Results and Analysis}
+\label{ch:results}
 
-The results follow the evidence chain established in Chapter 3. A benchmark first checks the implementations and selection procedure. The customer analysis then examines fitted partitions, explanation and addressability before sensitivity tests probe the main observations.
+The results follow the evidence chain established in Chapter~\ref{ch:methodology}, and are organised to answer the five research questions from \S\ref{sec:intro-rq} in turn. \S\ref{sec:benchmark-results} first checks the four clustering implementations and the label-free selection procedure on nine externally labelled datasets, before either is trusted on RetailRocket. \S\ref{sec:paired-results} then compares the fitted compact and rich partitions and their resampling stability (RQ1, RQ2). \S\ref{sec:explanation-results} compares CLASSIX provenance, ExKMC fidelity and cluster addressability (RQ3, RQ4). \S\ref{sec:sensitivity} tests whether these findings survive feature deletion, PCA, numerical perturbation, alternative session windows and a permutation control (RQ5), before \S\ref{sec:integrated-discussion} states the validity limits that bound every claim in this chapter. Throughout, each subsection reports a result, states the mechanism that plausibly produces it, gives the interpretation that mechanism supports, and marks the limitation of that interpretation — results are not left to speak for themselves.
 
 \input{sections/benchmark_results}
 \input{sections/paired_results}
