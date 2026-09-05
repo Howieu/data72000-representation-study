@@ -1,8 +1,8 @@
 # Final PDF visual QA
 
 - Final artifact: `dissertation/overleaf/build/main.pdf`.
-- SHA256: `70a583906a25cd1bbdb5b15041d99a7ddaccd4af95acd39f37c424ee1c4a7250`.
-- 42 pages; manuscript word count 9188 (method in word_count.json), abstract 204 words.
+- SHA256: `fd9ffac0d1b7161b84fdb2f69d5b8e7555173030f8de3ddc25c0995bb6d9bd4f`.
+- 42 pages; manuscript word count 9193 (method in word_count.json), abstract 204 words.
 - All 42 rendered pages inspected in seven contact sheets, with additional full-page inspection of the mathematical certificate. Earlier page-by-page inspection identified two short orphan pages; both were removed and the final 42-page build re-inspected.
 - Contents pp. 2–3, lists pp. 4–5, running page numbers and chapter starts agree.
 - Table 3.1 pp. 18–19 continues with a repeated header; Tables 4.1–4.2 p. 29 are within margins.
@@ -14,3 +14,7 @@
 - Original supervisor annotations were inspected on annotated-PDF pages 6, 10–14, 21, 22 and 24; all 16 comments map to final revisions in supervisor_feedback_audit.md.
 
 Temporary raster previews are ignored by Git. The compiled PDF is tracked under the repository's existing convention.
+
+## Declarative phrasing follow-up (6 September 2026)
+
+Replaced the three introductory research-question sentences and the three Section 4.5 question headings with declarative formulations. Recompiled in three passes and visually rechecked final pages 11, 36 and 37. No clipping or new build warnings; empirical results unchanged.

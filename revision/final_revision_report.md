@@ -2,7 +2,7 @@
 
 ## Changes made
 
-Revised the dissertation for readable definitions, explicit research questions and a connected argument from representation to clustering, explanation and operational assessment. The final manuscript has 9188 words under the documented TeXcount convention; the abstract has 204 words. The compiled PDF has 42 pages.
+Revised the dissertation for readable definitions, explicit research questions and a connected argument from representation to clustering, explanation and operational assessment. The final manuscript has 9193 words under the documented TeXcount convention; the abstract has 204 words. The compiled PDF has 42 pages.
 
 ## Supervisor feedback addressed
 
@@ -122,3 +122,7 @@ Validated source revision: `fbe089fc60e01d461036912ff1d4109da6b44125` on `superv
 Baseline/main: `6be20f7bdf9b001c765a99090439176e857ba150`.
 Remote: `https://github.com/Howieu/data72000-representation-study.git`.
 Only the revision branch is pushed; main is preserved.
+
+## Declarative phrasing follow-up (6 September 2026)
+
+At the author’s request, the three research questions in Section 1.2 now use declarative formulations. Section 4.5 uses “Strongly supported findings”, “Conditionally supported findings” and “Unresolved questions and evidence limits”. The original scope is preserved. The PDF was rebuilt in three passes; changed pages were visually inspected and the reported word count updated to 9193. No experiment or numerical result changed. The earlier source SHA above identifies the completed substantive revision; this follow-up is recorded in the branch history.
