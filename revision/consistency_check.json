@@ -1,0 +1,4119 @@
+{
+  "passed": 817,
+  "checks": [
+    {
+      "check": "frozen data/derived/category_coverage_audit.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen data/derived/compact_features.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen data/derived/feature_schema.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen data/derived/purchaser_event_timestamps.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen data/derived/rich_features.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen data/manifests/data_sources.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen data/manifests/input_hashes.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen data/manifests/input_schema.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen data/raw/benchmarks/LICENSE",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen data/raw/benchmarks/aggregation.txt",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen data/raw/benchmarks/compound.txt",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen data/raw/benchmarks/iris.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen data/raw/benchmarks/jain.txt",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen data/raw/benchmarks/manifest.json",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen data/raw/benchmarks/pathbased.txt",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen data/raw/benchmarks/r15.txt",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen data/raw/benchmarks/seeds.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen data/raw/benchmarks/spiral.txt",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen data/raw/benchmarks/wine.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen protocol/amendment_boundary_extension.json",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen protocol/analysis_protocol.json",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/benchmark/metrics_agg.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/benchmark/metrics_raw.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/benchmark/run_meta.json",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/benchmark/selected_label_free.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/benchmark/selected_oracle_supplementary.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/retailrocket/addressability_audit.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/retailrocket/addressability_audit_metadata.json",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/retailrocket/candidate_grid.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/retailrocket/candidate_grid.csv.schema.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/retailrocket/classix_boundary_extension.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/retailrocket/classix_boundary_extension.csv.schema.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/retailrocket/classix_parameter_sensitivity.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/retailrocket/classix_parameter_sensitivity.csv.schema.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/retailrocket/classix_provenance_selection_audit.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/retailrocket/cluster_profiles.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/retailrocket/cluster_profiles.csv.schema.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/retailrocket/cluster_transition_matrix.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/retailrocket/cluster_transition_matrix.csv.schema.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/retailrocket/exkmc_oos_fidelity.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/retailrocket/exkmc_rules.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/retailrocket/exkmc_train_k_selection.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/retailrocket/exkmc_train_selected_k_selection.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/retailrocket/exkmc_train_selected_oos_fidelity.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/retailrocket/exkmc_train_selected_rules.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/retailrocket/explanation_complexity.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/retailrocket/explanation_metadata.json",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/retailrocket/grid_boundary_diagnostic.json",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/retailrocket/paired_partition_comparison.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/retailrocket/paired_partition_comparison.csv.schema.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/retailrocket/resampling_stability.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/retailrocket/resampling_stability.csv.schema.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/retailrocket/run_metadata.json",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/retailrocket/selected_configurations.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/retailrocket/selected_configurations.csv.schema.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/retailrocket/selected_labels.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/retailrocket/selected_labels.csv.schema.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/sensitivity/classix_perturbation_stability.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/sensitivity/classix_perturbation_stability.csv.schema.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/sensitivity/distance_complexity_classix.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/sensitivity/distance_complexity_protocol.json",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/sensitivity/feature_ablation.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/sensitivity/feature_ablation.csv.schema.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/sensitivity/feature_ablation_candidate_grid.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/sensitivity/feature_ablation_selected.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/sensitivity/feature_ablation_selection_metadata.json",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/sensitivity/pca_sensitivity.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/sensitivity/pca_sensitivity.csv.schema.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/sensitivity/permutation_dimension_control.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/sensitivity/permutation_dimension_control.csv.schema.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/sensitivity/sensitivity_metadata.json",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/sensitivity/session_window_sensitivity.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/sensitivity/session_window_sensitivity.csv.schema.csv",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "frozen results/thesis_summary.json",
+      "pass": true,
+      "detail": "Baseline SHA256 unchanged"
+    },
+    {
+      "check": "compact provenance immutable native_public_attributes",
+      "pass": true,
+      "detail": "Only derived correspondence corrected"
+    },
+    {
+      "check": "compact provenance immutable config",
+      "pass": true,
+      "detail": "Only derived correspondence corrected"
+    },
+    {
+      "check": "compact provenance immutable scaler",
+      "pass": true,
+      "detail": "Only derived correspondence corrected"
+    },
+    {
+      "check": "compact provenance immutable n_samples",
+      "pass": true,
+      "detail": "Only derived correspondence corrected"
+    },
+    {
+      "check": "compact provenance immutable n_features",
+      "pass": true,
+      "detail": "Only derived correspondence corrected"
+    },
+    {
+      "check": "compact trace exact labels",
+      "pass": true,
+      "detail": "All customer labels match selected_labels.csv"
+    },
+    {
+      "check": "compact group 0",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 1",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 2",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 3",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 4",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 5",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 6",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 7",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 8",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 9",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 10",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 11",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 12",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 13",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 14",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 15",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 16",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 17",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 18",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 19",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 20",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 21",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 22",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 23",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 24",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 25",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 26",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 27",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 28",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 29",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 30",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 31",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 32",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 33",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 34",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 35",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 36",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 37",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 38",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 39",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 40",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 41",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 42",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 43",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 44",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 45",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 46",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 47",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 48",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 49",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 50",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 51",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 52",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 53",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 54",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 55",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 56",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 57",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 58",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 59",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 60",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 61",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 62",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 63",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 64",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 65",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 66",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 67",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 68",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 69",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 70",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 71",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 72",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 73",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 74",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 75",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 76",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 77",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 78",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 79",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 80",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 81",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 82",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 83",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 84",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 85",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 86",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 87",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 88",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 89",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 90",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 91",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 92",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 93",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 94",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 95",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 96",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 97",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 98",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 99",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 100",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 101",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 102",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 103",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 104",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 105",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 106",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 107",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 108",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 109",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 110",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 111",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 112",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 113",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 114",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 115",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 116",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 117",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 118",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 119",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 120",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 121",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 122",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 123",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 124",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 125",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 126",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 127",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 128",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 129",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "compact group 130",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich provenance immutable native_public_attributes",
+      "pass": true,
+      "detail": "Only derived correspondence corrected"
+    },
+    {
+      "check": "rich provenance immutable config",
+      "pass": true,
+      "detail": "Only derived correspondence corrected"
+    },
+    {
+      "check": "rich provenance immutable scaler",
+      "pass": true,
+      "detail": "Only derived correspondence corrected"
+    },
+    {
+      "check": "rich provenance immutable n_samples",
+      "pass": true,
+      "detail": "Only derived correspondence corrected"
+    },
+    {
+      "check": "rich provenance immutable n_features",
+      "pass": true,
+      "detail": "Only derived correspondence corrected"
+    },
+    {
+      "check": "rich trace exact labels",
+      "pass": true,
+      "detail": "All customer labels match selected_labels.csv"
+    },
+    {
+      "check": "rich group 0",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 1",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 2",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 3",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 4",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 5",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 6",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 7",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 8",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 9",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 10",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 11",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 12",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 13",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 14",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 15",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 16",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 17",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 18",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 19",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 20",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 21",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 22",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 23",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 24",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 25",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 26",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 27",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 28",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 29",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 30",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 31",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 32",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 33",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 34",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 35",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 36",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 37",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 38",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 39",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 40",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 41",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 42",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 43",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 44",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 45",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 46",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 47",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 48",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 49",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 50",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 51",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 52",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 53",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 54",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 55",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 56",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 57",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 58",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 59",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 60",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 61",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 62",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 63",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 64",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 65",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 66",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 67",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 68",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 69",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 70",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 71",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 72",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 73",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 74",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 75",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 76",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 77",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 78",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 79",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 80",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 81",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 82",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 83",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 84",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 85",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 86",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 87",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 88",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 89",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 90",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 91",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 92",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 93",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 94",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 95",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 96",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 97",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 98",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 99",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 100",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 101",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 102",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 103",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 104",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 105",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 106",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 107",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 108",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 109",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 110",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 111",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 112",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 113",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 114",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 115",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 116",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 117",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 118",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 119",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 120",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 121",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 122",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 123",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 124",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 125",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 126",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 127",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 128",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 129",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 130",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 131",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 132",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 133",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 134",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 135",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 136",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 137",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 138",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 139",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 140",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 141",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 142",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 143",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 144",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 145",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 146",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 147",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 148",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 149",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 150",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 151",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 152",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 153",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 154",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 155",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 156",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 157",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 158",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 159",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 160",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 161",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 162",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 163",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 164",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 165",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 166",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 167",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 168",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 169",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 170",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 171",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 172",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 173",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 174",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 175",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 176",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 177",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 178",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 179",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 180",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 181",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 182",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 183",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 184",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 185",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 186",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 187",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 188",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 189",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 190",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 191",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 192",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 193",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 194",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 195",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 196",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 197",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 198",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 199",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 200",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 201",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 202",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 203",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 204",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 205",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 206",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 207",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 208",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 209",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 210",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 211",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 212",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 213",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 214",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 215",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 216",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 217",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 218",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 219",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 220",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 221",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 222",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 223",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 224",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 225",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 226",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 227",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 228",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 229",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 230",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 231",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 232",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 233",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 234",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 235",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 236",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 237",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 238",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 239",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 240",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 241",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 242",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 243",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 244",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 245",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 246",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 247",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 248",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 249",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 250",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 251",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 252",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 253",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 254",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 255",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 256",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 257",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 258",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 259",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 260",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 261",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 262",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 263",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 264",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 265",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 266",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 267",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 268",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 269",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 270",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 271",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 272",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 273",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 274",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 275",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 276",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 277",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 278",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 279",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 280",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 281",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 282",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 283",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 284",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 285",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 286",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 287",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 288",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 289",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 290",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 291",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 292",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 293",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 294",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 295",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 296",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 297",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 298",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 299",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 300",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 301",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 302",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 303",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 304",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 305",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 306",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 307",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 308",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 309",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 310",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 311",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 312",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 313",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 314",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 315",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 316",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 317",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 318",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 319",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 320",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 321",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 322",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 323",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 324",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 325",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 326",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 327",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 328",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 329",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 330",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 331",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 332",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 333",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 334",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 335",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 336",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 337",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 338",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 339",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 340",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 341",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 342",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 343",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 344",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 345",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 346",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 347",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 348",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 349",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 350",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 351",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 352",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 353",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 354",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 355",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 356",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 357",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 358",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 359",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 360",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 361",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 362",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 363",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 364",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 365",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 366",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 367",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 368",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 369",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 370",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 371",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 372",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 373",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 374",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 375",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 376",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 377",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 378",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 379",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 380",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 381",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 382",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 383",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 384",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 385",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 386",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 387",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 388",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 389",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 390",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 391",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 392",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 393",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 394",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 395",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 396",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 397",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 398",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 399",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 400",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 401",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 402",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 403",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 404",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 405",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 406",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 407",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 408",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 409",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 410",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 411",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 412",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 413",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 414",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 415",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 416",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 417",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 418",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 419",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 420",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 421",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 422",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 423",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 424",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 425",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 426",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 427",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 428",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 429",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 430",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 431",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 432",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 433",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 434",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 435",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 436",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 437",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 438",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 439",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 440",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 441",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 442",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 443",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 444",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 445",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 446",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 447",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 448",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 449",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 450",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 451",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 452",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 453",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 454",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 455",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 456",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 457",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 458",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 459",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 460",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 461",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 462",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 463",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 464",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 465",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 466",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 467",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 468",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 469",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 470",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 471",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 472",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 473",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 474",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 475",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 476",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 477",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 478",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 479",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 480",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 481",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 482",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 483",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 484",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 485",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 486",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 487",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 488",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 489",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 490",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 491",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 492",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 493",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 494",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 495",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 496",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 497",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 498",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 499",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 500",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 501",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 502",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 503",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 504",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 505",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 506",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 507",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 508",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 509",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 510",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 511",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 512",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 513",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 514",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 515",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 516",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 517",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 518",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 519",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 520",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 521",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 522",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 523",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 524",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 525",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 526",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 527",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 528",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 529",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 530",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 531",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 532",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 533",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 534",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 535",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 536",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 537",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 538",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 539",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 540",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 541",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 542",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 543",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 544",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 545",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 546",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 547",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 548",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 549",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 550",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 551",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 552",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 553",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 554",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 555",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 556",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 557",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "rich group 558",
+      "pass": true,
+      "detail": "Representative membership and cluster consistency"
+    },
+    {
+      "check": "classix_r1.05_m10_distance/compact/unconstrained_silhouette",
+      "pass": true,
+      "detail": "Saved label counts equal selected configuration"
+    },
+    {
+      "check": "classix_r0.95_m10_distance/compact/deployment_acceptable",
+      "pass": true,
+      "detail": "Saved label counts equal selected configuration"
+    },
+    {
+      "check": "kmeans_k02/compact/unconstrained_silhouette",
+      "pass": true,
+      "detail": "Saved label counts equal selected configuration"
+    },
+    {
+      "check": "kmeans_k04/compact/deployment_acceptable",
+      "pass": true,
+      "detail": "Saved label counts equal selected configuration"
+    },
+    {
+      "check": "classix_r1.75_m1_distance/rich/unconstrained_silhouette",
+      "pass": true,
+      "detail": "Saved label counts equal selected configuration"
+    },
+    {
+      "check": "classix_r0.75_m10_density/rich/deployment_acceptable",
+      "pass": true,
+      "detail": "Saved label counts equal selected configuration"
+    },
+    {
+      "check": "kmeans_k04/rich/unconstrained_silhouette",
+      "pass": true,
+      "detail": "Saved label counts equal selected configuration"
+    },
+    {
+      "check": "kmeans_k04/rich/deployment_acceptable",
+      "pass": true,
+      "detail": "Saved label counts equal selected configuration"
+    },
+    {
+      "check": "kmeans independent ARI/NMI/VI",
+      "pass": true,
+      "detail": {
+        "ARI": 0.013974462729362883,
+        "NMI": 0.08938623390274329,
+        "VI": 1.6908046658510991
+      }
+    },
+    {
+      "check": "kmeans transitions",
+      "pass": true,
+      "detail": "Independently recounted transitions"
+    },
+    {
+      "check": "classix independent ARI/NMI/VI",
+      "pass": true,
+      "detail": {
+        "ARI": 0.06812498255765212,
+        "NMI": 0.053793793782236095,
+        "VI": 0.6929013186210101
+      }
+    },
+    {
+      "check": "classix transitions",
+      "pass": true,
+      "detail": "Independently recounted transitions"
+    },
+    {
+      "check": "addressability compact/selected_classix/0",
+      "pass": true,
+      "detail": "Recomputed size/share/coverage/effect gates"
+    },
+    {
+      "check": "addressability compact/selected_classix/1",
+      "pass": true,
+      "detail": "Recomputed size/share/coverage/effect gates"
+    },
+    {
+      "check": "addressability compact/selected_kmeans/0",
+      "pass": true,
+      "detail": "Recomputed size/share/coverage/effect gates"
+    },
+    {
+      "check": "addressability compact/selected_kmeans/1",
+      "pass": true,
+      "detail": "Recomputed size/share/coverage/effect gates"
+    },
+    {
+      "check": "addressability compact/selected_kmeans/2",
+      "pass": true,
+      "detail": "Recomputed size/share/coverage/effect gates"
+    },
+    {
+      "check": "addressability compact/selected_kmeans/3",
+      "pass": true,
+      "detail": "Recomputed size/share/coverage/effect gates"
+    },
+    {
+      "check": "addressability rich/selected_classix/576",
+      "pass": true,
+      "detail": "Recomputed size/share/coverage/effect gates"
+    },
+    {
+      "check": "addressability rich/selected_classix/684",
+      "pass": true,
+      "detail": "Recomputed size/share/coverage/effect gates"
+    },
+    {
+      "check": "addressability rich/selected_classix/689",
+      "pass": true,
+      "detail": "Recomputed size/share/coverage/effect gates"
+    },
+    {
+      "check": "addressability rich/selected_kmeans/0",
+      "pass": true,
+      "detail": "Recomputed size/share/coverage/effect gates"
+    },
+    {
+      "check": "addressability rich/selected_kmeans/1",
+      "pass": true,
+      "detail": "Recomputed size/share/coverage/effect gates"
+    },
+    {
+      "check": "addressability rich/selected_kmeans/2",
+      "pass": true,
+      "detail": "Recomputed size/share/coverage/effect gates"
+    },
+    {
+      "check": "addressability rich/selected_kmeans/3",
+      "pass": true,
+      "detail": "Recomputed size/share/coverage/effect gates"
+    },
+    {
+      "check": "compact/selected_classix addressability count",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "check": "rich/selected_classix addressability count",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "check": "compact/selected_kmeans addressability count",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "check": "rich/selected_kmeans addressability count",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "check": "profile kmeans/166/total_events",
+      "pass": true,
+      "detail": {
+        "reported": 338.5,
+        "artifact": 338.5
+      }
+    },
+    {
+      "check": "profile kmeans/166/session_count_30m",
+      "pass": true,
+      "detail": {
+        "reported": 28,
+        "artifact": 28.0
+      }
+    },
+    {
+      "check": "profile kmeans/166/distinct_top_categories",
+      "pass": true,
+      "detail": {
+        "reported": 12,
+        "artifact": 12.0
+      }
+    },
+    {
+      "check": "profile kmeans/1156/purchase_recency_days",
+      "pass": true,
+      "detail": {
+        "reported": 127.4,
+        "artifact": 127.41700537037038
+      }
+    },
+    {
+      "check": "profile classix/33/total_events",
+      "pass": true,
+      "detail": {
+        "reported": 869,
+        "artifact": 869.0
+      }
+    },
+    {
+      "check": "profile classix/33/session_count_30m",
+      "pass": true,
+      "detail": {
+        "reported": 36,
+        "artifact": 36.0
+      }
+    },
+    {
+      "check": "profile classix/33/distinct_top_categories",
+      "pass": true,
+      "detail": {
+        "reported": 14,
+        "artifact": 14.0
+      }
+    },
+    {
+      "check": "raw reproduction",
+      "pass": true,
+      "detail": "Four input hashes and all distributed customer tables independently rebuilt"
+    },
+    {
+      "check": "classix benchmark average rank",
+      "pass": true,
+      "detail": 2.4444444444444446
+    },
+    {
+      "check": "ward benchmark average rank",
+      "pass": true,
+      "detail": 2.4444444444444446
+    },
+    {
+      "check": "kmeans benchmark average rank",
+      "pass": true,
+      "detail": 2.388888888888889
+    },
+    {
+      "check": "dbscan benchmark average rank",
+      "pass": true,
+      "detail": 2.7222222222222223
+    }
+  ]
+}

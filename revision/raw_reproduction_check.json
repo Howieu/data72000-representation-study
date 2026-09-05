@@ -1,0 +1,67 @@
+{
+  "command": "python revision/check_raw_reproduction.py --raw-dir <original RetailRocket directory>",
+  "raw_files": [
+    {
+      "file": "events.csv",
+      "sha256": "3745aa83238b1e6d44d8fda209807899f420084398f94ddf745f3cbcfecbf9e7"
+    },
+    {
+      "file": "item_properties_part1.csv",
+      "sha256": "30aad5aeca58b2dc27dcc73e1708565f5818e45adb3eb57401f91e87355b0b81"
+    },
+    {
+      "file": "item_properties_part2.csv",
+      "sha256": "d5e7d1a91dc40f522aeb596b267e6c87d8aed689a7192d12369cfb165eb987e5"
+    },
+    {
+      "file": "category_tree.csv",
+      "sha256": "94e865eb0a3d48cbbfe3b79079018dd92509315c88f5fd8d00d0b4b5af434f5b"
+    }
+  ],
+  "category_join": {
+    "event_rows": 2756101,
+    "known_category_event_rows": 2099173,
+    "event_category_coverage": 0.761645890335659,
+    "unknown_category_event_rows": 656928,
+    "category_tree_cycles": 0,
+    "category_tree_nodes": 1669
+  },
+  "feature_comparisons": [
+    {
+      "file": "compact_features.csv",
+      "rows": 11719,
+      "columns": 5,
+      "match": true
+    },
+    {
+      "file": "rich_features.csv",
+      "rows": 11719,
+      "columns": 15,
+      "match": true
+    },
+    {
+      "file": "category_coverage_audit.csv",
+      "rows": 11719,
+      "columns": 10,
+      "match": true
+    }
+  ],
+  "purchaser_timestamp_rows": 230678,
+  "purchaser_timestamps_match": true,
+  "metadata": {
+    "cohort_size": 11719,
+    "event_rows_in_cohort": 230678,
+    "full_event_max_timestamp_utc": "2015-09-18T02:59:47.788000+00:00",
+    "snapshot_timestamp_utc": "2015-09-19T02:59:47.788000+00:00",
+    "snapshot_id": "snapshot_20150919T025947Z",
+    "zero_view_denominator_visitors": 428,
+    "zero_known_category_denominator_visitors": 1168
+  },
+  "tolerance": {
+    "rtol": 1e-12,
+    "atol": 1e-12
+  },
+  "experimental_fits_run": 0,
+  "data_or_results_written": false,
+  "pandas_version": "2.3.3"
+}

@@ -11,6 +11,7 @@ import pandas as pd
 from sklearn.preprocessing import StandardScaler
 
 from .exkmc_experiment import schema_transform
+from ..provenance_alignment import align_groups
 
 try:
     from classix import CLASSIX
@@ -88,9 +89,10 @@ def fit_classix_provenance(
     if params["post_alloc"]:
         raise ValueError("post_alloc must be false for the frozen CLASSIX configuration")
     model = CLASSIX(**params).fit(scaled)
-    groups = np.asarray(model.groups_, dtype=int)
+    groups_native = np.asarray(model.groups_, dtype=int)
     labels = np.asarray(model.labels_, dtype=int)
     reps = np.asarray(model.groupCenters_, dtype=int)
+    groups = np.asarray(align_groups(groups_native.tolist(), np.asarray(model.inverse_ind, dtype=int).tolist(), reps.tolist(), labels.tolist()), dtype=int)
     if groups.size != values.shape[0] or labels.size != values.shape[0]:
         raise ValueError("CLASSIX returned invalid assignment lengths")
     group_ids = sorted(int(x) for x in np.unique(groups))
@@ -121,14 +123,14 @@ def fit_classix_provenance(
         "final_cluster": int(labels[i]), "final_cluster_size": cluster_sizes[int(labels[i])],
     } for i in range(values.shape[0])]
     native = {
-        "groups_": groups.tolist(), "labels_": labels.tolist(),
+        "groups_": groups_native.tolist(), "labels_": labels.tolist(),
         "groupCenters_": reps.tolist(), "splist_": _jsonable(getattr(model, "splist_", None)),
         "ind": _jsonable(getattr(model, "ind", None)),
         "inverse_ind": _jsonable(getattr(model, "inverse_ind", None)),
         "clusterSizes_": _jsonable(getattr(model, "clusterSizes_", None)),
     }
     return {
-        "schema_version": "1.0.0",
+        "schema_version": "1.0.1",
         "representation": str(representation),
         "n_samples": int(values.shape[0]), "n_features": int(values.shape[1]),
         "engine": "classix_1.5.1",
@@ -143,6 +145,7 @@ def fit_classix_provenance(
         "provenance_limits": {
             "native_assignments": ["groups_", "labels_", "groupCenters_", "splist_", "ind", "inverse_ind", "clusterSizes_"],
             "reconstructed": ["merge_relations", "final_cluster_size", "customer_trace"],
+            "group_row_order": "native groups_ uses sorted rows; exported groups and customer_trace use inverse_ind to restore input order",
             "note": "CLASSIX 1.5.1 does not expose a documented complete merge-edge graph; relations are reconstructed from public group/final assignments.",
         },
     }

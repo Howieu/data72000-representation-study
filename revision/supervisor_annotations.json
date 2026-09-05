@@ -1,0 +1,213 @@
+{
+  "source": "/Users/vendredi/Downloads/14199981_DATA72000 anno.pdf",
+  "annotations": [
+    {
+      "id": "ANN-01",
+      "pdf_page": 6,
+      "type": "/Highlight",
+      "comment": "what does that mean?",
+      "highlighted_text": "aggregationprovenance,",
+      "rect": [
+        227.368,
+        530.547,
+        342.881,
+        547.238
+      ]
+    },
+    {
+      "id": "ANN-02",
+      "pdf_page": 6,
+      "type": "/Highlight",
+      "comment": "Too many details for an abstract. Abstract should be short and give high-level overview of the project and some of its main findings, without too many technicalities",
+      "highlighted_text": "Changingtherepresentationproducesmarkedlydifferentpartitions. Independentfull-data selectiongivesARI0.014forthetwofour-clusterKMeansresultsandARI0.068for CLASSIX.Across41CLASSIXsettingsacceptableinbothspaces,matched-parameter ARIrangesfrom − to0.392. Meanfixed-parameteroverlap-resamplingARI 0.051 remainsabove0.964,showingthataconfigurationcanberepeatablewithineach representationwhiletherepresentationsdisagree.",
+      "rect": [
+        89.7871,
+        401.071,
+        521.945,
+        507.398
+      ]
+    },
+    {
+      "id": "ANN-03",
+      "pdf_page": 10,
+      "type": "/Highlight",
+      "comment": "is this specific to the data you looked at? customers may be many things and they may not even purchase items in some situations",
+      "highlighted_text": "Acompactpurchasesummaryemphasisestransactiontimingandrepetition. Arichevent representationalsorecordsbrowsingvolume,conversionratios,temporalengagementand categorybreadth. Thesechoicesdefinedifferentdistancesbetweenthesamepeopleand canmakedifferentclusterstructuresvisible",
+      "rect": [
+        89.7871,
+        390.208,
+        523.153,
+        460.68
+      ]
+    },
+    {
+      "id": "ANN-04",
+      "pdf_page": 10,
+      "type": "/Highlight",
+      "comment": "is this the right word?",
+      "highlighted_text": "provenance",
+      "rect": [
+        461.343,
+        220.893,
+        517.427,
+        237.584
+      ]
+    },
+    {
+      "id": "ANN-05",
+      "pdf_page": 11,
+      "type": "/Highlight",
+      "comment": "?",
+      "highlighted_text": "installed",
+      "rect": [
+        90.2181,
+        483.658,
+        131.716,
+        500.349
+      ]
+    },
+    {
+      "id": "ANN-06",
+      "pdf_page": 11,
+      "type": "/Text",
+      "comment": "generally, i find the text hard to follow.  rephrase in simple, non-ambiguous terms",
+      "highlighted_text": "",
+      "rect": [
+        246.109,
+        613.999,
+        270.109,
+        637.999
+      ]
+    },
+    {
+      "id": "ANN-07",
+      "pdf_page": 11,
+      "type": "/Highlight",
+      "comment": "first time these two are mentioned",
+      "highlighted_text": "DBSCANandWard",
+      "rect": [
+        90.2181,
+        381.62,
+        188.527,
+        398.311
+      ]
+    },
+    {
+      "id": "ANN-08",
+      "pdf_page": 11,
+      "type": "/Highlight",
+      "comment": "very low. what is the ground truth here. i think ARI can't be interpreted without knowing about this. perhaps these numbers shouldn't be here",
+      "highlighted_text": "0.014and0.068",
+      "rect": [
+        90.2181,
+        234.217,
+        168.227,
+        250.908
+      ]
+    },
+    {
+      "id": "ANN-09",
+      "pdf_page": 12,
+      "type": "/Highlight",
+      "comment": "what are event logs in this context?",
+      "highlighted_text": "eventlogs.",
+      "rect": [
+        355.982,
+        523.327,
+        408.766,
+        540.018
+      ]
+    },
+    {
+      "id": "ANN-10",
+      "pdf_page": 12,
+      "type": "/Highlight",
+      "comment": "what do you mean by neutral input?",
+      "highlighted_text": "neutralinput",
+      "rect": [
+        431.515,
+        541.255,
+        493.265,
+        557.946
+      ]
+    },
+    {
+      "id": "ANN-11",
+      "pdf_page": 13,
+      "type": "/Highlight",
+      "comment": "what is this?",
+      "highlighted_text": "Timing",
+      "rect": [
+        229.355,
+        571.952,
+        265.126,
+        588.643
+      ]
+    },
+    {
+      "id": "ANN-12",
+      "pdf_page": 13,
+      "type": "/Highlight",
+      "comment": "?",
+      "highlighted_text": "Tuningsettings",
+      "rect": [
+        371.065,
+        404.395,
+        441.028,
+        421.086
+      ]
+    },
+    {
+      "id": "ANN-13",
+      "pdf_page": 14,
+      "type": "/Highlight",
+      "comment": "most of this discussion is, again, hard to follow/understand. try use simple language and technical terms only if they are properly defined",
+      "highlighted_text": "Theoryandsoftwarematurityalsovaryacrosstheseapproaches. IMMandpriceanalyses provideapproximationboundsunderdefinedobjectivefunctions,whereasCLASSIX suppliesamaintainedimplementationandpublicexplanationattributesforitsown partition. CREAM,ICOTandXClustersbroadentheexpressionandoptimisationchoices, buttheirguaranteesandcomputationaldemandsconcerndifferenttargets. Queryable rules,boundedobjectivelossandnativeprovenancearecomplementarypropertiesrather thangradesononeexplanationscale.",
+      "rect": [
+        89.8471,
+        607.505,
+        524.206,
+        731.759
+      ]
+    },
+    {
+      "id": "ANN-14",
+      "pdf_page": 21,
+      "type": "/Highlight",
+      "comment": "this seems out of context and incorrect/incomplete. what are you trying to proof? motivation?",
+      "highlighted_text": "Lettheprocessedcovariancematrixbe withleadingeigenvalues andλ . Definethe 2 S λ 1 eigengap − 0. Letaperturbationchangethecovarianceby andalign γ = λ 1 λ 2 > ∆S theperturbeddirectionubwithu. When2∥∆S∥ 2 γ,theDavisKahantheoremgivesthe ub < ∥2 conservativebound(DavisandKahan,1970) 2∥∆S∥ 2 sin∠( bu, ≤ 2 ub,u) . γ √ Aftersignalignment, ∥u bu − u∥ 2 ≤ sin∠( ub,u). Ifeveryprocessedpointchangesbyat ub 2 ub, 2 most andhasnormatmostB,aconservativescorechangeboundis ε x √ 2∥∆S∥ 2 b s = ε x + 2B . γ Let",
+      "rect": [
+        89.7871,
+        413.088,
+        519.85,
+        644.266
+      ]
+    },
+    {
+      "id": "ANN-15",
+      "pdf_page": 22,
+      "type": "/Highlight",
+      "comment": "what is CLASSIX perturbation",
+      "highlighted_text": "CLASSIX perturbationusesstandarddeviations0,0.000001,0.0001,0.001and0.01wi",
+      "rect": [
+        90.2181,
+        426.391,
+        516.081,
+        461.009
+      ]
+    },
+    {
+      "id": "ANN-16",
+      "pdf_page": 24,
+      "type": "/Highlight",
+      "comment": "what is a noise assignment",
+      "highlighted_text": "2180",
+      "rect": [
+        307.019,
+        303.884,
+        325.933,
+        320.575
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "projection_no_false_negatives": true,
+  "projection_false_positives_possible": true,
+  "score_bound": 0.05019567308959537,
+  "observed_score_movement": 0.010123787261010708,
+  "scope": "Deterministic helper checks only; does not certify any customer fit."
+}

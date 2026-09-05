@@ -1,6 +1,6 @@
 \chapter{Technical Reproduction Map}
 
-The reported experimental results are reproduced from the distributed data with \path{python -m src.reproduce}. The fixed sequence covers the benchmark, customer clustering, explanations, sensitivity analyses, summary tables and figures. The optional \path{--compile-pdf} flag also rebuilds the report. Environment versions and random seeds are recorded in \path{environment.yml} and \path{protocol/analysis_protocol.json}.
+The reported experimental results are reproduced from the distributed data with \path{python -m src.reproduce}. The fixed sequence covers the benchmark, customer clustering, explanations, sensitivity analyses, summary tables and figures. The optional \path{--compile-pdf} flag also rebuilds the report after rerunning the experimental sequence. To compile only the manuscript while retaining saved results, run \path{xelatex -interaction=nonstopmode -halt-on-error -output-directory=build main.tex} three times from \path{dissertation/overleaf}. Environment versions and random seeds are recorded in \path{environment.yml} and \path{protocol/analysis_protocol.json}.
 
 Primary clustering selections are stored in \path{results/retailrocket/selected_configurations.csv}. Customer level labels, transitions, profiles and resampling records remain separate so that every reported aggregate can be recalculated. ExKMC training selection, held out fidelity and exported rules are stored in distinct files. CLASSIX provenance includes an exact label audit against the selected result.
 

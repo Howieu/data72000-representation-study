@@ -1,0 +1,10 @@
+{
+  "distribution": "classixclustering-1.5.1",
+  "archive_sha256": "10e67bcba06ed915ac03288740242d8fbb97f940891718fd519b2342ed9c7d98",
+  "source_files": {
+    "clustering.py": "290f014ee52eee9635a5eeff7dc2ebe58b38044f6a088bbceb3e41396912dba8",
+    "aggregate_ed.py": "e6bb0ae579b3b5b00f9ef9aca87f3aa1f82574e4b270bb9ed1a295719a95391a",
+    "merge_ed.py": "4d5f3653c5b6035eb1964a8b3b834b911ac984b969dde60c5d0c5bee513c7421"
+  },
+  "inspection": "Preprocessing, orientation, inclusive windows, merging, groupCenters_, groups_/labels_ ordering; published source distribution."
+}
