@@ -126,3 +126,7 @@ Only the revision branch is pushed; main is preserved.
 ## Declarative phrasing follow-up (6 September 2026)
 
 At the author’s request, the three research questions in Section 1.2 now use declarative formulations. Section 4.5 uses “Strongly supported findings”, “Conditionally supported findings” and “Unresolved questions and evidence limits”. The original scope is preserved. The PDF was rebuilt in three passes; changed pages were visually inspected and the reported word count updated to 9193. No experiment or numerical result changed. The earlier source SHA above identifies the completed substantive revision; this follow-up is recorded in the branch history.
+
+## Normal-weight typography follow-up (6 September 2026)
+
+At the author’s request, all bold typography has been removed from the dissertation. This includes generated headings, contents entries, theorem labels, the cover title and captions. The 42-page PDF was rebuilt in three passes; a full-document font inspection found no bold fonts. Cover and Section 4.5 layout checks passed. No prose or empirical result changed.

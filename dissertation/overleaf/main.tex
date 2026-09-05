@@ -3,6 +3,8 @@
 \usepackage[a4paper,left=32mm,right=25mm,top=25mm,bottom=25mm]{geometry}
 \usepackage{fontspec}
 \setmainfont{Times New Roman}
+% Keep all structural text, including class-generated headings, at normal weight.
+\renewcommand{\bfdefault}{m}
 \usepackage{setspace}
 \onehalfspacing
 \usepackage{ragged2e}
@@ -37,7 +39,7 @@
 
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{2}
-\captionsetup{font=small,labelfont=bf,labelsep=space}
+\captionsetup{font=small,labelfont=normalfont,labelsep=space}
 \setlist{nosep}
 
 \begin{document}
@@ -52,7 +54,7 @@
 \end{flushright}
 \centering
 \vspace*{18mm}
-{\Large\bfseries \DissertationTitle\par}
+{\Large\mdseries \DissertationTitle\par}
 \vfill
 {\large A report submitted to The University of Manchester for the degree of Master of Science in the Faculty of Humanities\par}
 \vfill

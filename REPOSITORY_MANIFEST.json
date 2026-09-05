@@ -4,7 +4,7 @@
   "student_id": "14199981",
   "raw_retailrocket_included": false,
   "file_count": 160,
-  "total_bytes": 32839284,
+  "total_bytes": 32813207,
   "files": [
     {
       "path": ".gitignore",
@@ -118,8 +118,8 @@
     },
     {
       "path": "dissertation/overleaf/build/main.pdf",
-      "bytes": 512683,
-      "sha256": "fd9ffac0d1b7161b84fdb2f69d5b8e7555173030f8de3ddc25c0995bb6d9bd4f"
+      "bytes": 485586,
+      "sha256": "beed6d57f8186333bd19f7852318b8c6d8a1823bc07d459ced29495ceb332564"
     },
     {
       "path": "dissertation/overleaf/figures/customer_structure.png",
@@ -138,8 +138,8 @@
     },
     {
       "path": "dissertation/overleaf/main.tex",
-      "bytes": 4616,
-      "sha256": "830abc7751e36c694e1788e87baab667e77f7b3558ddb6f3b882f48fe77941da"
+      "bytes": 4735,
+      "sha256": "ccd18d677d24923a609481e2006e457d467bfc945353867ca9ca7912ca9f0bdb"
     },
     {
       "path": "dissertation/overleaf/references.bib",
@@ -578,8 +578,8 @@
     },
     {
       "path": "revision/final_revision_report.md",
-      "bytes": 9920,
-      "sha256": "4fbaee768c3179ad024be05c849a0814ec7202bc36062f7aafe8880e9c67cef1"
+      "bytes": 10344,
+      "sha256": "55d6a6128e47c9fb717961a7a5385dc587b06acd92f14d7bb99791d552e5abf2"
     },
     {
       "path": "revision/mathematical_check.json",
@@ -598,8 +598,8 @@
     },
     {
       "path": "revision/pdf_qa.md",
-      "bytes": 2038,
-      "sha256": "703c665bb966adf609a255b6e1a18cc21c0c87732148fa11a7a498eb26c1eb3f"
+      "bytes": 2515,
+      "sha256": "fca23978e5f12105d34c8178e105b1f7908df4224bb03cd3a51f5bf0c3442d73"
     },
     {
       "path": "revision/raw_reproduction_check.json",
