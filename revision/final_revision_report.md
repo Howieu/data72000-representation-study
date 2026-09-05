@@ -37,7 +37,7 @@ python3 revision/check_citations.py
 python3 -m unittest discover -s tests -v
 python revision/check_mathematics.py
 python revision/check_raw_reproduction.py --raw-dir /Users/vendredi/Agents_outputs/claude/erp-project/retailrocket-representation-thesis/data/raw/retailrocket
- git diff --check
+git diff --check
 ```
 
 The two commands requiring numpy/pandas used `/Users/vendredi/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3`. Five provenance regression tests passed. Deterministic mathematical helper checks passed; these do not certify customer fits. All 31 active citation keys exist in both bibliography sources and no manuscript TODO/FIXME/TBD/placeholder remains. `citation_audit.md` records primary-source verification and access limits.
@@ -117,7 +117,7 @@ Local absolute path: `/Users/vendredi/Agents_outputs/claude/erp-project/retailro
 
 ## Git commit hash
 
-The validated source revision is committed on `supervisor-feedback-revision`; its immutable SHA is recorded in this section by the subsequent audit-record commit. The manuscript and PDF do not change during that metadata step.
+Validated source revision: `fbe089fc60e01d461036912ff1d4109da6b44125` on `supervisor-feedback-revision`. This report records that immutable source/PDF commit in a subsequent audit-record commit; no manuscript, code, data or PDF changes occur in that metadata step. The branch tip containing the audit record is reported after the push.
 
 Baseline/main: `6be20f7bdf9b001c765a99090439176e857ba150`.
 Remote: `https://github.com/Howieu/data72000-representation-study.git`.

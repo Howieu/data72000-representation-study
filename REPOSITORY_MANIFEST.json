@@ -4,7 +4,7 @@
   "student_id": "14199981",
   "raw_retailrocket_included": false,
   "file_count": 160,
-  "total_bytes": 32838611,
+  "total_bytes": 32838719,
   "files": [
     {
       "path": ".gitignore",
@@ -578,8 +578,8 @@
     },
     {
       "path": "revision/final_revision_report.md",
-      "bytes": 9187,
-      "sha256": "2d1a7d8db82b8083685607bab399721fb21c930ebb5ebbdeec93aa8adfed8565"
+      "bytes": 9295,
+      "sha256": "ac23d7fdb212fc29a0c14e961f1140ff480fb7043a53fd7b5e6d273f06a1d7a8"
     },
     {
       "path": "revision/mathematical_check.json",
