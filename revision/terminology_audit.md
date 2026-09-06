@@ -15,15 +15,15 @@ Definitions are checked in reading order through the active input graph. Early h
 | variation of information | methods_mathematics.tex:30 | conditional entropies | Defined in context; later use inherits this meaning |
 | Hungarian matching | methods_mathematics.tex:30 | one-to-one relabelling | Defined in context; later use inherits this meaning |
 | resampling stability | methods_mathematics.tex:34 | independent 80 per cent | Defined in context; later use inherits this meaning |
-| provenance | introduction.tex:11 | recorded route | Defined in context; later use inherits this meaning |
-| fidelity | literature_review.tex:42 | exact predictive agreement | Defined in context; later use inherits this meaning |
+| provenance | introduction.tex:11 | records the route | Defined in context; later use inherits this meaning |
+| fidelity | literature_review.tex:44 | exact agreement | Defined in context; later use inherits this meaning |
 | leaf budget | methods_mathematics.tex:38 | caps the number | Defined in context; later use inherits this meaning |
 | addressability | methods_mathematics.tex:40 | size, coverage | Defined in context; later use inherits this meaning |
 | aggregation group | methods_mathematics.tex:20 | intermediate object | Defined in context; later use inherits this meaning |
 | principal direction | methods_mathematics.tex:20 | maximum variance | Defined in context; later use inherits this meaning |
 | eigengap | methods_mathematics.tex:77 | clearly the leading direction | Defined in context; later use inherits this meaning |
 | perturbation | methods_mathematics.tex:77 | change of the numerical input | Defined in context; later use inherits this meaning |
-| PCA | data_representation.tex:46 | orthogonal linear combinations | Defined in context; later use inherits this meaning |
+| PCA | data_representation.tex:44 | orthogonal linear combinations | Defined in context; later use inherits this meaning |
 | noise | methods_mathematics.tex:22 | absence from a retained cluster | Defined in context; later use inherits this meaning |
 | density merging | methods_mathematics.tex:22 | intersection density | Defined in context; later use inherits this meaning |
 | distance merging | methods_mathematics.tex:22 | connected groups | Defined in context; later use inherits this meaning |

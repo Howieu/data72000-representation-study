@@ -2,7 +2,7 @@
 
 ## Changes made
 
-Revised the dissertation for readable definitions, explicit research questions and a connected argument from representation to clustering, explanation and operational assessment. The final manuscript has 9193 words under the documented TeXcount convention; the abstract has 204 words. The compiled PDF has 42 pages.
+Revised the dissertation for readable definitions, explicit research questions and a connected argument from representation to clustering, explanation and operational assessment. The final manuscript has 7165 words under the documented TeXcount convention; the abstract has 204 words. The compiled PDF has 38 pages.
 
 ## Supervisor feedback addressed
 
@@ -48,7 +48,7 @@ Build command, run three times from `dissertation/overleaf`:
 /Library/TeX/texbin/xelatex -interaction=nonstopmode -halt-on-error -output-directory=build main.tex
 ```
 
-Final build passed without fatal errors, undefined references/citations or overfull boxes. Underfull messages were reviewed visually and accepted. All 42 final rendered pages were inspected; equations, tables, figures, contents, bibliography and page breaks passed (see `pdf_qa.md`). The complete manuscript diff and the exporter/helper changes were reviewed. The large provenance JSON was reviewed semantically against preserved native arrays.
+Final build passed without fatal errors, undefined references/citations or overfull boxes. Underfull messages were reviewed visually and accepted. All 38 final rendered pages were inspected; equations, tables, figures, contents, bibliography and page breaks passed (see `pdf_qa.md`). The complete manuscript diff and the exporter/helper changes were reviewed. The large provenance JSON was reviewed semantically against preserved native arrays.
 
 The full `src.reproduce` experimental pipeline was deliberately not invoked: its compile flag would also rerun the empirical programme. The only result repair was reconstructed from saved arrays.
 
@@ -61,6 +61,8 @@ One purchaser event log; no ground-truth customer types, prospective business ou
 No unresolved essential gap prevents the bounded conclusion. **No supervisor feedback genuinely required new experimental evidence.** The empirical programme, features, grids, seeds, constraints, selection and fitted labels were retained. Read-only reconstruction, source inspection and deterministic regression checks were sufficient. No redesigned or additional customer experiment was performed.
 
 ## Files changed
+
+The later condensation audit is additionally recorded in `revision/word_limit_revision.md`.
 
 - `REPOSITORY_MANIFEST.json`
 - `dissertation/overleaf/build/main.pdf`
@@ -130,3 +132,11 @@ At the author’s request, the three research questions in Section 1.2 now use d
 ## Normal-weight typography follow-up (6 September 2026)
 
 At the author’s request, all bold typography has been removed from the dissertation. This includes generated headings, contents entries, theorem labels, the cover title and captions. The 42-page PDF was rebuilt in three passes; a full-document font inspection found no bold fonts. Cover and Section 4.5 layout checks passed. No prose or empirical result changed.
+
+## Word-limit revision (7 September 2026)
+
+Reduced the body from 9193 to 7165 words (2028 removed); the unchanged 204-word abstract is excluded. A supplementary body-plus-abstract count is 7369. The provided presentation guide does not state a 7500-word maximum, so that threshold is applied as the author’s requested limit, not a verified regulation. The established count includes body text, headings, table/caption text and notes; front matter, bibliography and appendix remain excluded. See `word_limit_revision.md` for scope and self-review.
+
+Condensed repeated background, feature-table restatements, overlapping result explanations and repeated limitations. Preserved every mathematical paragraph in methods_mathematics.tex, all 31 cited sources, all 117 checked retained numeric claims, all tables/figures and all 16 annotation resolutions. No material was moved into the appendix to evade the limit. The 38-page PDF was compiled in three passes and visually inspected. Numeric/citation checks and 817 consistency assertions pass; no bold fonts occur. No experiments, recorded results or model labels changed.
+
+The author clarified that 7500 applies to Chapters 1–5. The final contents-page count is 7165. The supplied guide p. 4 places this count at the bottom of the contents, not below the abstract.

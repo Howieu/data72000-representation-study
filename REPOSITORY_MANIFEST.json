@@ -3,8 +3,8 @@
   "course_code": "DATA72000",
   "student_id": "14199981",
   "raw_retailrocket_included": false,
-  "file_count": 160,
-  "total_bytes": 32813207,
+  "file_count": 161,
+  "total_bytes": 32794656,
   "files": [
     {
       "path": ".gitignore",
@@ -118,8 +118,8 @@
     },
     {
       "path": "dissertation/overleaf/build/main.pdf",
-      "bytes": 485586,
-      "sha256": "beed6d57f8186333bd19f7852318b8c6d8a1823bc07d459ced29495ceb332564"
+      "bytes": 474746,
+      "sha256": "b34ec4aa40f7d6685f421b957fe5ba3a69c8447f4c228f8ac83abab8463a5d42"
     },
     {
       "path": "dissertation/overleaf/figures/customer_structure.png",
@@ -139,7 +139,7 @@
     {
       "path": "dissertation/overleaf/main.tex",
       "bytes": 4735,
-      "sha256": "ccd18d677d24923a609481e2006e457d467bfc945353867ca9ca7912ca9f0bdb"
+      "sha256": "bd2b6058d0120e4aa3a794a3dc96ea9a3329c5e5c00abe2f0e676b250a7ed815"
     },
     {
       "path": "dissertation/overleaf/references.bib",
@@ -163,13 +163,13 @@
     },
     {
       "path": "dissertation/overleaf/sections/benchmark_results.tex",
-      "bytes": 1920,
-      "sha256": "a63e7f3ff102b7ff3698478948c117bdc2499db266e0f94513d0da1971bf12cc"
+      "bytes": 1500,
+      "sha256": "eabb9dc2a5e6f5a8865731689b122ad1396257e10f33519bf1323076ff03ffeb"
     },
     {
       "path": "dissertation/overleaf/sections/conclusion.tex",
-      "bytes": 2032,
-      "sha256": "09705ea114f983bb1a95fc091d2acc1ae7577eba60d79b0836f8c443eb729e42"
+      "bytes": 1311,
+      "sha256": "5a79a9aaa59722e47f950b50629895f9d1795d2e5bb8285bca0ecab156beee99"
     },
     {
       "path": "dissertation/overleaf/sections/data_methodology.tex",
@@ -178,23 +178,23 @@
     },
     {
       "path": "dissertation/overleaf/sections/data_representation.tex",
-      "bytes": 6900,
-      "sha256": "ea2953c1e0742bfa884174f6462a1eb9c8e2ae3023b70ea644cdc00aee3c00ab"
+      "bytes": 5310,
+      "sha256": "b633640e37a72e85a949b89540be01342fcb83ccaaed60d2c6ff6c1febde2839"
     },
     {
       "path": "dissertation/overleaf/sections/explanation_results.tex",
-      "bytes": 4955,
-      "sha256": "778280ec2271871dab8814b6eeccf410f88701c2efd9fc7b717641fbfda7cc07"
+      "bytes": 3373,
+      "sha256": "f3428eafc6ee71156859bbf1f651b234b7e6a57f9fcb8f3a41f57b851c230ade"
     },
     {
       "path": "dissertation/overleaf/sections/introduction.tex",
-      "bytes": 5285,
-      "sha256": "16a60b3995f985c3a9cad81f74d83f7a1f04e8dd96aa26dc5739e748e7dcf4af"
+      "bytes": 3423,
+      "sha256": "2a0ba63ea076591d939d00a8ea957db1e4eed04516bc8a6aea0c94de4f20d818"
     },
     {
       "path": "dissertation/overleaf/sections/literature_review.tex",
-      "bytes": 8943,
-      "sha256": "f1f1c108827925b09f86d7fd7a5a25ec5ad87bc7e408903cd2ddb3ce22f42d95"
+      "bytes": 5733,
+      "sha256": "7545ecd95c696d5d0e23b63a0c72dba8dcb8597df63549e812b6f95dbcfc5319"
     },
     {
       "path": "dissertation/overleaf/sections/methods_mathematics.tex",
@@ -203,8 +203,8 @@
     },
     {
       "path": "dissertation/overleaf/sections/paired_results.tex",
-      "bytes": 6870,
-      "sha256": "f81567992f9e23a13581cdaf43a692a7323f75c4fbfab53aafa6a50a258dc519"
+      "bytes": 4994,
+      "sha256": "c9379c48cc376f866a6bb0c5ec31450500ade19b78bbcbe89ac25ad696d17cb0"
     },
     {
       "path": "dissertation/overleaf/sections/results_analysis.tex",
@@ -213,8 +213,8 @@
     },
     {
       "path": "dissertation/overleaf/sections/sensitivity_limitations.tex",
-      "bytes": 9565,
-      "sha256": "6cdfbb9b4b26f2ff61384ee41506a9947c1ad63f954c8f2d81c46463ff3e2224"
+      "bytes": 7513,
+      "sha256": "978c6355fbd8c19a1cadbd37ae372db1fcab7db82b9bc23efe47c223f0624edb"
     },
     {
       "path": "dissertation/overleaf/sections/technical_appendix.tex",
@@ -578,8 +578,8 @@
     },
     {
       "path": "revision/final_revision_report.md",
-      "bytes": 10344,
-      "sha256": "55d6a6128e47c9fb717961a7a5385dc587b06acd92f14d7bb99791d552e5abf2"
+      "bytes": 11753,
+      "sha256": "c6f6d33c96a35f4a1ee0df356051c9c012e1885f3b4117eff089d6f6e8fbd46a"
     },
     {
       "path": "revision/mathematical_check.json",
@@ -588,8 +588,8 @@
     },
     {
       "path": "revision/numerical_audit.md",
-      "bytes": 19449,
-      "sha256": "3aa950c4ff65c0339544cdd72613e3e2730ca02dd8e7dff6e8d2551babe29461"
+      "bytes": 19446,
+      "sha256": "d3fa718cfa23ee6b176923c16cbc08041b61ec140fb9204473b440b26d26f1ca"
     },
     {
       "path": "revision/numerical_scope.md",
@@ -598,8 +598,8 @@
     },
     {
       "path": "revision/pdf_qa.md",
-      "bytes": 2515,
-      "sha256": "fca23978e5f12105d34c8178e105b1f7908df4224bb03cd3a51f5bf0c3442d73"
+      "bytes": 1740,
+      "sha256": "e3f5b2d3f6fd3eceb069290d5ec08a879e70b4de1abf55433f538c4436ecf9b6"
     },
     {
       "path": "revision/raw_reproduction_check.json",
@@ -618,18 +618,23 @@
     },
     {
       "path": "revision/supervisor_feedback_audit.md",
-      "bytes": 6829,
-      "sha256": "840e58f8cff757d41b4908ea7b9f481fe0af90126ac93b38d50ad3085984641b"
+      "bytes": 7066,
+      "sha256": "4eb16f77ff782bdcaf431b8b1ba0ac7ff5a664bdb14f429445af76dd943505ce"
     },
     {
       "path": "revision/terminology_audit.md",
-      "bytes": 3670,
-      "sha256": "29fb6597613ee31c6886228b5f5e4bf6dc1d337364b112a5aee691192fa786c5"
+      "bytes": 3662,
+      "sha256": "52ae9c6b67f9b9a9fe1b064bef069d26fd8e8028d92a214eede469b27b4ec406"
     },
     {
       "path": "revision/word_count.json",
-      "bytes": 420,
-      "sha256": "343235de5b90cae6583fd0a82a6ea89dcfacaa61a0aa819cc89555e6ecde3f79"
+      "bytes": 449,
+      "sha256": "7f298e8202c05d604127605e5169c3a4cdab96c4c08d24b1332e99f0722cf633"
+    },
+    {
+      "path": "revision/word_limit_revision.md",
+      "bytes": 4713,
+      "sha256": "7b8d58ba38ca4f4ee324e331df0b5a5d901485f4dc3e828526192c919bfd3d65"
     },
     {
       "path": "src/__init__.py",

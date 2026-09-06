@@ -1,12 +1,13 @@
 {
-  "total": 9193,
+  "total": 7165,
   "chapters": {
-    "introduction": 692,
-    "literature_review": 1157,
-    "data_methodology": 3850,
-    "results_analysis": 3227,
-    "conclusion": 267
+    "introduction": 411,
+    "literature_review": 646,
+    "data_methodology": 3608,
+    "results_analysis": 2340,
+    "conclusion": 160
   },
   "method": "TeXcount -inc -sum=1,1,1,0,0,0,0 -total -brief on the five chapter roots; includes text, headings, captions and notes; excludes front matter, abstract, references, appendix and math expression counts.",
-  "abstract_words": 204
+  "abstract_words": 204,
+  "body_plus_abstract": 7369
 }

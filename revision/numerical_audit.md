@@ -32,7 +32,7 @@ Explicit saved-output claim checks. Each row compares a manuscript literal with 
 | sensitivity_limitations.tex:7 () | 0.517 | results/sensitivity/feature_ablation.csv [('kmeans', 'top_category_share')] | 0.517026393173 | Yes | Retain |
 | sensitivity_limitations.tex:7 () | 0.189 | results/sensitivity/feature_ablation.csv [('classix', 'distinct_top_categories')] | 0.188998257198 | Yes | Retain |
 | sensitivity_limitations.tex:7 () | 0.238 | results/sensitivity/feature_ablation.csv [('classix', 'top_category_share')] | 0.237674278367 | Yes | Retain |
-| data_representation.tex:3,9,48 () | 11,719 | data/derived/{compact,rich}_features.csv [row count; same IDs and compact values] | 11719 | Yes | Retain |
+| data_representation.tex:3,9 () | 11,719 | data/derived/{compact,rich}_features.csv [row count; same IDs and compact values] | 11719 | Yes | Retain |
 | paired_results.tex:3,32 () | 0.014 | results/retailrocket/paired_partition_comparison.csv [kmeans/ari] | 0.0139744627294 | Yes | Retain |
 | paired_results.tex:32 () | 0.089 | results/retailrocket/paired_partition_comparison.csv [kmeans/nmi] | 0.0893862339027 | Yes | Retain |
 | paired_results.tex:32 () | 1.691 | results/retailrocket/paired_partition_comparison.csv [kmeans/vi] | 1.69080466585 | Yes | Retain |

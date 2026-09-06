@@ -1,24 +1,18 @@
 # Final PDF visual QA
 
-- Final artifact: `dissertation/overleaf/build/main.pdf`.
-- SHA256: `beed6d57f8186333bd19f7852318b8c6d8a1823bc07d459ced29495ceb332564`.
-- 42 pages; manuscript word count 9193 (method in word_count.json), abstract 204 words.
-- All 42 rendered pages inspected in seven contact sheets, with additional full-page inspection of the mathematical certificate. Earlier page-by-page inspection identified two short orphan pages; both were removed and the final 42-page build re-inspected.
-- Contents pp. 2–3, lists pp. 4–5, running page numbers and chapter starts agree.
-- Table 3.1 pp. 18–19 continues with a repeated header; Tables 4.1–4.2 p. 29 are within margins.
-- Section 3.2.3 p. 24 and continuation p. 25; Section 3.2.4 pp. 25–27: norms, Greek symbols, subscripts, inequalities and proof endings render without clipping.
-- Figures 4.1, 4.2 and 4.3 on pp. 30, 32 and 34 are readable, correctly numbered and inside margins.
-- References pp. 39–41 render author names, URLs and DOI text; no unresolved citation or reference markers.
-- Conclusion fits p. 38; Appendix A is p. 42. No accidental blank or two-line continuation page remains.
-- Final XeLaTeX log has no fatal errors, undefined references/citations, LaTeX warnings or overfull boxes. 65 underfull box messages remain from short/ragged lines and narrow table cells; rendered inspection found no clipping or malformed content.
-- Original supervisor annotations were inspected on annotated-PDF pages 6, 10–14, 21, 22 and 24; all 16 comments map to final revisions in supervisor_feedback_audit.md.
+Latest inspection: 7 September 2026, after word-limit condensation.
 
-Temporary raster previews are ignored by Git. The compiled PDF is tracked under the repository's existing convention.
+- Artifact: `dissertation/overleaf/build/main.pdf`.
+- SHA256: `b34ec4aa40f7d6685f421b957fe5ba3a69c8447f4c228f8ac83abab8463a5d42`.
+- 38 pages; Chapters 1–5 total 7165 words; abstract 204 (excluded). Count scope is recorded in word_count.json and word_limit_revision.md.
+- All 38 rendered pages inspected in seven contact sheets; the final table-layout correction was additionally checked on pages 13–14. Cover, contents pp. 2–3, lists pp. 4–5 and page numbers agree.
+- Final word count appears at the bottom of the contents on p. 3, as required by the supplied presentation guide p. 4. The guide does not require it below the abstract.
+- Table 2.1 p. 13 and Table 3.1 p. 16 fit within margins. Tables 4.1–4.2 p. 27 are readable.
+- Sections 3.2.3–3.2.4 pp. 21–24 retain all mathematical text from the validated prior revision. No clipped equation or missing symbol is visible.
+- Figures 4.1–4.3 pp. 27/29/31 retain original graphics and numbering.
+- Section 4.5 pp. 32–33 keeps declarative headings; conclusion p. 34 fits one page. References pp. 35–37 and appendix p. 38 render correctly.
+- Full-document font inspection finds no bold fonts; regular/italic text and mathematical fonts remain.
+- Three final XeLaTeX passes succeeded without undefined citations/references, LaTeX warnings, fatal errors or overfull boxes. 68 underfull messages were checked against rendered pages; no malformed content found.
+- All 16 annotations were rechecked against final section/page anchors in supervisor_feedback_audit.md.
 
-## Declarative phrasing follow-up (6 September 2026)
-
-Replaced the three introductory research-question sentences and the three Section 4.5 question headings with declarative formulations. Recompiled in three passes and visually rechecked final pages 11, 36 and 37. No clipping or new build warnings; empirical results unchanged.
-
-## Normal-weight typography follow-up (6 September 2026)
-
-Removed bold weight throughout the dissertation, including class-generated chapter/section/paragraph and theorem headings, contents entries, cover title and caption labels. Three XeLaTeX passes succeeded. Font inspection across all 42 PDF pages found no bold fonts; regular/italic text and mathematical fonts remain. Cover and Section 4.5 were visually rechecked. Text, word count and empirical results are unchanged.
+Temporary raster previews are ignored by Git; the compiled PDF follows the repository's existing tracked convention.
